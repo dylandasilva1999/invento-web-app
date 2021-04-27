@@ -20,6 +20,7 @@ namespace invento_web_app
                 case ".html": mimeType = "text/html"; break;
                 case ".jpg": mimeType = "image/jpeg"; break;
                 case ".png": mimeType = "image/png"; break;
+                case ".svg": mimeType = "image/svg+xml"; break;
                 case ".css": mimeType = "text/css"; break;
                 case ".js": mimeType = "text/javascript"; break;
                 case ".ttf":mimeType = "application/x-font-ttf"; break;
