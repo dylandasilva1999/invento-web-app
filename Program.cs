@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Text;
 using System.Net;
 using System.Threading.Tasks;
@@ -11,19 +12,6 @@ namespace invento_web_app
         public static string url = "http://localhost:8000/";
         public static int pageViews = 0;
         public static int requestCount = 0;
-        public static string pageData =
-        "<!DOCTYPE>" +
-        "<html>" +
-        "   <head>" +
-        "       <title> Http Listener Example </title>" +
-        "   </head>" +
-        "   <body>" +
-        "       <p> Page Views: {0} </p>" +
-        "       <form method=\"post\" action=\"shutdown\">" +
-        "           <input type=\"submit\" value=\"Shutdown\" {1}>" +
-        "       </form>" +
-        "   </body>" +
-        "</html>";
 
         public static async Task HandleIncomingConnections()
         {
@@ -42,24 +30,52 @@ namespace invento_web_app
                 Console.WriteLine(req.UserAgent);
                 Console.WriteLine();
 
-                if((req.HttpMethod == "POST") && req.Url.AbsolutePath == "/shutdown")
+                string path = req.Url.AbsolutePath;
+
+                if((req.HttpMethod == "POST") && path == "/shutdown")
                 {
+                    path = "/index.html";
                     Console.WriteLine("Shutdown Requested");
                     runServer = false;
                 }
 
-                if(req.Url.AbsolutePath != "/favicon.ico")
+                if(path != "/favicon.ico")
                 {
                     pageViews += 1;
                 }
 
-                string disableSubmit = !runServer? "disabled" : "";
-                byte[] data = Encoding.UTF8.GetBytes(String.Format(pageData, pageViews, disableSubmit));
-                res.ContentType = "text/html";
-                res.ContentEncoding = Encoding.UTF8;
-                res.ContentLength64 = data.LongLength;
+                try
+                {
+                    FileLoader myFileLoader = new FileLoader(path);
+                    myFileLoader.ReadFile();
 
-                await res.OutputStream.WriteAsync(data, 0, data.Length);
+                    string disableSubmit = !runServer ? "disabled" : "";
+                    byte[] data;
+
+                    if(myFileLoader.mimeType.IndexOf("html") >= 0)
+                        data = Encoding.UTF8.GetBytes(String.Format(Encoding.ASCII.GetString(myFileLoader.data), pageViews, disableSubmit));
+                    else
+                        data = myFileLoader.data;
+
+                    res.ContentType = myFileLoader.mimeType;
+                    res.ContentEncoding = Encoding.UTF8;
+                    res.ContentLength64 = data.LongLength;
+                    //write to the response stream, and then close it
+                    await res.OutputStream.WriteAsync(data, 0, data.Length);
+                    //close the listener
+                }
+                catch (FileNotFoundException e)
+                {
+                    byte[] data;
+                    data = Encoding.UTF8.GetBytes("<h2>A 404 Error has Occured</h2>");
+                   
+                    res.ContentType = "text/html";
+                    res.ContentEncoding = Encoding.UTF8;
+                    res.ContentLength64 = data.LongLength;
+                    res.StatusCode = 404;
+
+                    await res.OutputStream.WriteAsync(data, 0, data.Length);
+                }
                 res.Close();
             }
         }
