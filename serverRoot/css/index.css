@@ -1,0 +1,111 @@
+/*
+
+Fonts:
+
+Kollektif Bold
+font-family: 'Kollektif-Bold';
+
+Kollektif Regular
+font-family: 'Kollektif';
+
+Gidole Regular
+font-family: 'Gidole-Regular';
+
+Colours:
+
+Light Navy = #344c63
+Darker Navy = #2d4256
+Navy = #1c2a39
+Teal = #4a967a
+Aquamarine = #4cbea0
+Fuchsia = #b3415f
+
+*/
+
+/*
+Strip the box
+*/
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4CBEA0;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #344C63;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+  text-decoration: none;
+  color: white;
+}
+
+/*
+Fonts
+*/
+
+@font-face {
+    font-family: 'Kollektif-Bold';
+    src: url('../fonts/Kollektif-Bold.woff2') format('woff2'),
+        url('../fonts/Kollektif-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kollektif';
+    src: url('../fonts/Kollektif.woff2') format('woff2'),
+        url('../fonts/Kollektif.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gidole-Regular';
+    src: url('../fonts/Gidole-Regular.woff2') format('woff2'),
+        url('../fonts/Gidole-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+#heading {
+  font-size: 50px;
+  font-family: 'Kollektif-Bold';
+}

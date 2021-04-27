@@ -23,7 +23,9 @@ namespace invento_web_app
                 case ".css": mimeType = "text/css"; break;
                 case ".js": mimeType = "text/javascript"; break;
                 case ".ttf":mimeType = "application/x-font-ttf"; break;
-                case ".otf":mimeType = "application/x-font-otf"; break;
+                case ".woff":mimeType = "application/x-font-woff"; break;
+                case ".woff2":mimeType = "application/x-font-woff2"; break;
+                case ".ico":mimeType = "image/x-icon"; break;
             }
         }
 
