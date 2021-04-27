@@ -58,6 +58,8 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  height: 110vh;
+  background-color: #1c2a39;
 }
 
 a {
@@ -105,7 +107,80 @@ Fonts
     font-display: swap;
 }
 
+/*
+Navbar Styling
+*/
+
+.navbar {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 1%;
+    position: sticky;
+}
+
+.navbar-brand {
+    width: 40%;
+}
+
+.navbar-nav {
+    margin-top: -10px;
+    font-family: 'Gidole-Regular';
+    font-size: 20px;
+    margin-left: 10%;
+    width: 60%;
+}
+
+.active {
+    border-bottom: 2px solid #4CBEA0;
+    transition: all ease 200ms;
+}
+
+.nav-item {
+    padding-left: 5%;
+}
+
+.nav-link {
+    transition: all ease 200ms;
+}
+
+.nav-link:hover {
+    color: #4CBEA0;
+    transition: all ease 200ms;
+    transform: skew(10deg);
+}
+
+#app-name {
+    float: left;
+    padding-left: 3%;
+    font-family: 'Kollektif';
+    font-size: 32px;
+    color: #ffffff;
+}
+
+#logo-nav {
+    float: left;
+}
+
+/*
+Header Styling
+*/
+
+.header {
+    width: 85%;
+    height: 80vh;
+    background-color: #4CBEA0;
+    margin-top: 3vh;
+}
+
 #heading {
   font-size: 50px;
   font-family: 'Kollektif-Bold';
 }
+
+
+
+
+
+
+
+
