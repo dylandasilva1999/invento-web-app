@@ -52,20 +52,51 @@ namespace invento_web_app
                     string disableSubmit = !runServer ? "disabled" : "";
                     byte[] data;
 
-                    if(myFileLoader.mimeType.IndexOf("html") >= 0)
-                        data = Encoding.UTF8.GetBytes(String.Format(Encoding.ASCII.GetString(myFileLoader.data), pageViews, disableSubmit));
+                    if(myFileLoader.mimeType.IndexOf("text/HTML") >= 0)
+                    {
+                        string input = Encoding.UTF8.GetString(myFileLoader.data);
+
+                        if(path == "/index.html")
+                        {
+                            data = Encoding.UTF8.GetBytes(IndexHtmlParser.Process(input));
+                        }
+                        else if(path == "/about-us.html")
+                        {
+                            data = Encoding.UTF8.GetBytes(AboutHtmlParser.Process(input));
+                        }
+                        else if(path == "/contact.html")
+                        {
+                            data = Encoding.UTF8.GetBytes(ContactHtmlParser.Process(input));
+                        }
+                        else if(path == "/recipes.html")
+                        {
+                            data = Encoding.UTF8.GetBytes(RecipesHtmlParser.Process(input));
+                        }
+                        else if(path == "/resources.html")
+                        {
+                            data = Encoding.UTF8.GetBytes(ResourcesHtmlParser.Process(input));
+                        }
+                        else
+                        {
+                            throw new FileNotFoundException("Not a page");
+                        }
+
+                    }  
                     else
+                    {
                         data = myFileLoader.data;
+                    }
 
                     res.ContentType = myFileLoader.mimeType;
                     res.ContentEncoding = Encoding.UTF8;
                     res.ContentLength64 = data.LongLength;
-                    //write to the response stream, and then close it
+
                     await res.OutputStream.WriteAsync(data, 0, data.Length);
-                    //close the listener
                 }
                 catch (FileNotFoundException e)
                 {
+                    Console.WriteLine(e.Message);
+
                     byte[] data;
                     data = Encoding.UTF8.GetBytes("<h2>A 404 Error has Occured</h2>");
                    
