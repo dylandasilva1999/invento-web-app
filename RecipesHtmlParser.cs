@@ -32,6 +32,18 @@ namespace invento_web_app
                 }
             }
 
+            HtmlNode recipesNode = htmlDoc.GetElementbyId("recipesItems");
+
+            recipesNode.RemoveAllChildren();
+
+            string[] newRecipes = {"Pick Axe", "Smooth Stone", "Torch", "Golden Apple", "Repeater", "Iron Sword", "Diamond Chestplate", "Slime Block"};
+
+            foreach (string currentRecipeString in newRecipes)
+            {
+                HtmlNode newRecipesNode = HtmlNode.CreateNode("<div class='recipe'>" + currentRecipeString + "</div>");
+                recipesNode.AppendChild(newRecipesNode);
+            }
+
             return htmlDoc.DocumentNode.InnerHtml;
         }
     }

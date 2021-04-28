@@ -52,7 +52,7 @@ namespace invento_web_app
                     string disableSubmit = !runServer ? "disabled" : "";
                     byte[] data;
 
-                    if(myFileLoader.mimeType.IndexOf("text/HTML") >= 0)
+                    if(myFileLoader.mimeType.IndexOf("text/html") >= 0)
                     {
                         string input = Encoding.UTF8.GetString(myFileLoader.data);
 

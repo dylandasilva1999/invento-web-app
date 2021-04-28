@@ -167,13 +167,52 @@ Header Styling
 .header {
     width: 85%;
     height: 80vh;
-    background-color: #4CBEA0;
     margin-top: 3vh;
 }
 
 #heading {
   font-size: 50px;
   font-family: 'Kollektif-Bold';
+}
+
+.recipe {
+  width: 12%;
+  background-color: #ffffff;
+  margin: 2%;
+  height: 20vh;
+  border-radius: 35px;
+  text-align: center;
+  font-family: 'Kollektif';
+  display: inline-block;
+}
+
+.recipe-wrapper {
+  position: relative;
+  overflow-x: scroll;
+  width: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  transition: all 0.2s;
+  transform: scale(1);
+  will-change: transform;
+  user-select: none;
+  cursor: pointer;
+}
+
+.recipe-wrapper.active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  transform: scale(1.02);
+}
+
+#recipe-heading {
+  font-size: 28px;
+  color: #ffffff;
+  margin-left: 2%;
+}
+
+.recipe-wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 

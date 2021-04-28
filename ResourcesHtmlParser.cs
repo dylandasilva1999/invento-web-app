@@ -32,6 +32,19 @@ namespace invento_web_app
                 }
             }
 
+            HtmlNode resourcesNode = htmlDoc.GetElementbyId("resourcesItems");
+            Console.WriteLine(resourcesNode.OuterHtml);
+
+            resourcesNode.RemoveAllChildren();
+
+            string[] newResources = {"Wood", "Cobblestone", "Diamonds", "Gold", "Redstone", "Iron", "Coal", "Slime"};
+
+            foreach (string currentResourceString in newResources)
+            {
+                HtmlNode newResourcesNode = HtmlNode.CreateNode("<div class='resource'>" + currentResourceString + "</div>");
+                resourcesNode.AppendChild(newResourcesNode);
+            }
+            
             return htmlDoc.DocumentNode.InnerHtml;
         }
     }
