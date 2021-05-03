@@ -61,18 +61,21 @@
 
 ### Project Description
 
-Invento is specified Minecraft inventory tracker for those crafter enthusiasts, who want to bring their game to another level.
+According to Kincaid diving into the history of Minecraft, it was initially created in 2009 by Markus Persson, was "...also known as Notch and was originally called Cave Game" (2019). Minecraft then evolved into a "survival game", where you have to "...survive hostile mobs and can explore the vast world" and use your "...resources to craft new materials that you can use to create structures, survive longer, and craft more materials" (Kincaid 2019). This is where the basis of the project comes from to manage and keep track of those resources and which recipes can be crafted.
+
+Invento is a specified interactive web application `Minecraft` inventory tracker for those crafter enthusiasts, who want to bring their game to another level, enhancing their technical capabilities with ease.
+
+Invento is a project for my Term 4 Interactive Development major, where we were tasked to create an interactive web application using C# and MVC architecture that will act as a Minecraft inventory tracker. I then created a brand and logo for my project called Invento, to tie in with the inventory management system, and made use a cube logo to represent the main logo of minecraft.
 
 ### Built With
 
-* [Visual Studio](https://visualstudio.microsoft.com/)
+* [Visual Studio Code](https://code.visualstudio.com/)
 * [C-Sharp](https://docs.microsoft.com/en-us/dotnet/csharp/)
-* [.NET Core](https://dotnet.microsoft.com/download/dotnet)
 * [GitHub](https://github.com/)
 * [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
 * [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Visual_Studio_Icon_2019.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/C_Sharp_wordmark.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/C_Sharp_wordmark.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" width="3.7%" height="3.7%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -81,20 +84,24 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Ensure that you have the latest version of Android Studio installed on your machine. The Kotlin plugin will also be required.
+Ensure that you have the latest version of Visual Studio Code installed on your machine. The C-Sharp extention will be required.
 
 ### How to install
 
 ### Installation
 Here are a couple of ways to clone this repo:
 
-1. Clone the repo
-```sh
-git clone https://github.com/dylandasilva1999/yukihyo-virtualpet-app.git
+1. Clone the repo <br>
+`Visual Studio Code` -> Press `F1` to display the command palette -> In the command palette prompt enter `gitcl` -> Select `Git: Clone` -> When prompted with `Repository URL` enter the URL and hit `Enter` -> Select the `local directory` to clone the project 
+
+   URL: `https://github.com/dylandasilva1999/invento-web-app`
+
+```
+git clone https://github.com/dylandasilva1999/invento-web-app.git
 ```
 2. Open the project
-
-Use `Open Workspace` in Visual Studio.
+   Navigate to the project GitHub repository. <br>
+   Click on the `Code` dropdown -> Choose open with `GitHub desktop` -> Download and create repository <br>
 
 <!-- FEATURES AND FUNCTIONALITY-->
 ## Features and Functionality
@@ -193,13 +200,14 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 <!-- LICENSE -->
 ## Contact
 
-* **Dylan da Silva** - 190082@virtualwindow.co.za
+* **Dylan da Silva** - [@dylandasilva.designs](https://www.instagram.com/dylandasilva.designs/) - 190082@virtualwindow.co.za
 * **Project Link** - https://github.com/dylandasilva1999/invento-web-app
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
 * My lecturer Christof Enslin
+* [Minecraft History Article](https://www.thescienceacademystemmagnet.org/2019/12/20/the-history-of-minecraft/#:~:text=In%202009%2C%20Minecraft%20was%20created,resources%20to%20build%20those%20structures.)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [image1]: Images/Image1.png
