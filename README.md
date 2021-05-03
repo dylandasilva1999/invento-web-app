@@ -5,6 +5,7 @@
 ![GitHub watchers](https://img.shields.io/github/watchers/dylandasilva1999/babble-chat-app?color=%231c2a39)
 ![GitHub language count](https://img.shields.io/github/languages/count/dylandasilva1999/babble-chat-app?color=%231c2a39)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dylandasilva1999/babble-chat-app?color=%231c2a39)
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <h6 align="center">Dylan da Silva IDV 302</h6>
 <p align="center">
@@ -17,7 +18,8 @@
   <h3 align="center">Invento</h3>
 
   <p align="center">
-    Minecraft Inventory Tracker
+    Minecraft Inventory Tracker <br>
+      <a href="https://github.com/ArmandPretorius/cclone"><strong>Explore the docs »</strong></a>
    <br />
    <br />
    <a href="">View Demo</a>
@@ -74,8 +76,9 @@ Invento is a project for my Term 4 Interactive Development major, where we were 
 * [GitHub](https://github.com/)
 * [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
 * [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [JavaScript](https://www.javascript.com/)
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/C_Sharp_wordmark.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" width="3.7%" height="3.7%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/C_Sharp_wordmark.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" width="3.7%" height="3.7%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width="4%" height="4%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -211,4 +214,7 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [image1]: Images/Image1.png
+
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/dylan-da-silva-72b56a20a/
 
