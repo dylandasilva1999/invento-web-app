@@ -67,7 +67,7 @@ According to Kincaid diving into the history of Minecraft, it was initially crea
 
 Invento is a specified interactive web application `Minecraft` inventory tracker for those crafter enthusiasts, who want to bring their game to another level, enhancing their technical capabilities with ease.
 
-Invento is a project for my Term 4 Interactive Development major, where we were tasked to create an interactive web application using C# and MVC architecture that will act as a Minecraft inventory tracker. I then created a brand and logo for my project called Invento, to tie in with the inventory management system, and made use a cube logo to represent the main logo of minecraft.
+Invento is a project for my Term 2 Interactive Development major, where we were tasked to create an interactive web application using C# and MVC architecture that will act as a Minecraft inventory tracker. I then created a brand and logo for my project called Invento, to tie in with the inventory management system, and made use a cube logo to represent the main logo of minecraft.
 
 ### Built With
 
