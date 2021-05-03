@@ -19,7 +19,7 @@
 
   <p align="center">
     Minecraft Inventory Tracker <br>
-      <a href="https://github.com/ArmandPretorius/cclone"><strong>Explore the docs »</strong></a>
+      <a href="https://github.com/dylandasilva1999/invento-web-app"><strong>Explore the docs »</strong></a>
    <br />
    <br />
    <a href="">View Demo</a>
