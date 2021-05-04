@@ -166,14 +166,165 @@ Header Styling
 
 .header {
     width: 85%;
-    height: 80vh;
-    background-color: #4CBEA0;
+    height: 65vh;
     margin-top: 3vh;
 }
 
 #heading {
   font-size: 50px;
   font-family: 'Kollektif-Bold';
+}
+
+.left-header-about {
+  margin: 0%;
+  background-color: red;
+}
+
+.header-card {
+  width: 100%;
+  height: 65vh;
+  margin-top: 14vh;
+  border-radius: 15px;
+}
+
+#header-main-text {
+  font-family: 'Kollektif';
+}
+
+.about-header-image {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: -13vh;
+}
+
+.about-header-image-container {
+  width: 100%;
+}
+
+.first-content-text-about {
+  width: auto;
+  margin: auto;
+  padding-top: 8%;
+}
+
+#first-main-about-text {
+  width: 50%;
+  font-family: 'Kollektif';
+  font-size: 35px;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.auqaColor {
+  color: #4CBEA0;
+}
+
+/*
+Founders Section
+*/
+
+.founders-section {
+  padding-top: 8%;
+  width: auto;
+  margin: auto;
+}
+
+.founders {
+  width: auto;
+  margin: auto;
+}
+
+.founder-card {
+  transition: all ease 200ms;
+}
+
+.founder-card:hover {
+  transition: all ease 200ms;
+  transform: scale(0.8);
+}
+
+.second-content-text-about {
+  width: auto;
+  margin: auto;
+  padding-top: 8%;
+}
+
+#second-main-about-text {
+  width: 58%;
+  font-family: 'Kollektif';
+  font-size: 35px;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.stats-section {
+  padding-top: 6%;
+  width: 100%;
+  margin: auto;
+}
+
+.stats {
+  width: 100%;
+  margin: auto;
+}
+
+.stats-card {
+  width: 95%;
+  transition: all ease 200ms;
+  background-color: #ffffff;
+  border-radius: 35px;
+  padding: 2.5%;
+  margin: 2%;
+}
+
+.stats-card:hover {
+  transition: all ease 200ms;
+  transform: scale(1.1);
+}
+
+#downloads-text {
+  font-family: 'Gidole-Regular';
+  font-size: 30px;
+  text-align: center;
+}
+
+#download-amount {
+  font-family: 'Kollektif-Bold';
+  color: #4CBEA0;
+  font-size: 35px;
+  text-align: center;
+}
+
+#shares-text {
+  font-family: 'Gidole-Regular';
+  font-size: 30px;
+  text-align: center;
+}
+
+#shares-amount {
+  font-family: 'Kollektif-Bold';
+  color: #4CBEA0;
+  font-size: 35px;
+  text-align: center;
+}
+
+#usage-text {
+  font-family: 'Gidole-Regular';
+  font-size: 30px;
+  text-align: center;
+}
+
+#usage-amount {
+  font-family: 'Kollektif-Bold';
+  color: #4CBEA0;
+  font-size: 35px;
+  text-align: center;
 }
 
 
