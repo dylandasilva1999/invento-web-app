@@ -1,3 +1,4 @@
+//Slider functionality from Ionut Daniel https://codepen.io/thenutz/pen/VwYeYEE
 const slider = document.querySelector('.recipe-wrapper');
 let isDown = false;
 let startX;

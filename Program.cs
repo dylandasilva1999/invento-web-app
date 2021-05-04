@@ -68,9 +68,9 @@ namespace invento_web_app
                         {
                             data = Encoding.UTF8.GetBytes(ContactHtmlParser.Process(input));
                         }
-                        else if(path == "/recipes.html")
+                        else if(path == "/inventory.html")
                         {
-                            data = Encoding.UTF8.GetBytes(RecipesHtmlParser.Process(input));
+                            data = Encoding.UTF8.GetBytes(InventoryHtmlParser.Process(input));
                         }
                         else if(path == "/resources.html")
                         {

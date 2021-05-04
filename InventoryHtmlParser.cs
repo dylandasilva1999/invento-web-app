@@ -5,7 +5,7 @@ using HtmlAgilityPack;
 
 namespace invento_web_app
 {
-    class RecipesHtmlParser
+    class InventoryHtmlParser
     {
         public static string Process(string input)
         {
@@ -30,18 +30,6 @@ namespace invento_web_app
                 {
                     throw new FileNotFoundException("File corrupt!");
                 }
-            }
-
-            HtmlNode recipesNode = htmlDoc.GetElementbyId("recipesItems");
-
-            recipesNode.RemoveAllChildren();
-
-            string[] newRecipes = {"Pick Axe", "Smooth Stone", "Torch", "Golden Apple", "Repeater", "Iron Sword", "Diamond Chestplate", "Slime Block"};
-
-            foreach (string currentRecipeString in newRecipes)
-            {
-                HtmlNode newRecipesNode = HtmlNode.CreateNode("<div class='recipe'>" + currentRecipeString + "</div>");
-                recipesNode.AppendChild(newRecipesNode);
             }
 
             return htmlDoc.DocumentNode.InnerHtml;

@@ -1,3 +1,4 @@
+//Slider functionality from Ionut Daniel https://codepen.io/thenutz/pen/VwYeYEE
 const slider = document.querySelector('.resource-wrapper');
 let isDown = false;
 let startX;
