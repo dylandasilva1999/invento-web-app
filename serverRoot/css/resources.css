@@ -175,46 +175,197 @@ Header Styling
   font-family: 'Kollektif-Bold';
 }
 
-.resource {
-  width: 12%;
+#resources-heading {
+  font-size: 45px;
+  font-family: 'Kollektif';
+  color: #4CBEA0;
+  margin: 2%;
+}
+
+/*
+Basic Resources Styling
+*/
+
+.basic-resource {
+  width: 15%;
   background-color: #ffffff;
   margin: 2%;
-  height: 20vh;
-  border-radius: 35px;
+  height: 25vh;
+  border-radius: 15px;
   text-align: center;
   font-family: 'Kollektif';
   display: inline-block;
+  transition: all ease 200ms;
 }
 
-.resource-wrapper {
-  position: relative;
-  overflow-x: scroll;
+.basic-resource:hover {
+  transition: all ease 300ms;
+  transform: scale(1.08);
+}
+
+.basic-resource-wrapper {
   width: auto;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-  transition: all 0.2s;
-  transform: scale(1);
-  will-change: transform;
-  user-select: none;
-  cursor: pointer;
 }
 
-.resource-wrapper.active {
-  cursor: grabbing;
-  cursor: -webkit-grabbing;
-  transform: scale(1.02);
-}
-
-#resources-heading {
-  font-size: 28px;
-  color: #ffffff;
+#basic-resources {
   margin-left: 2%;
+  color: #ffffff;
+  font-family: 'Gidole-Regular';
 }
 
-.resource-wrapper::-webkit-scrollbar {
-  display: none;
+#basic-resource-name {
+  font-family: 'Gidole-Regular';
+  font-size: 25px;
+  padding-top: 40%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+/*
+Rare Resources Styling
+*/
+
+.rare-resource {
+  width: 15%;
+  background-color: #ffffff;
+  margin: 2%;
+  height: 25vh;
+  border-radius: 15px;
+  text-align: center;
+  font-family: 'Kollektif';
+  display: inline-block;
+  transition: all ease 200ms;
+}
+
+.rare-resource:hover {
+  transition: all ease 300ms;
+  transform: scale(1.08);
+}
+
+.rare-resource-wrapper {
+  width: auto;
+}
+
+#rare-resources {
+  margin-left: 2%;
+  color: #ffffff;
+  font-family: 'Gidole-Regular';
+}
+
+#rare-resource-name {
+  font-family: 'Gidole-Regular';
+  font-size: 25px;
+  padding-top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+Food Resources Styling
+*/
+
+.food-resource {
+  width: 15%;
+  background-color: #ffffff;
+  margin: 2%;
+  height: 25vh;
+  border-radius: 15px;
+  text-align: center;
+  font-family: 'Kollektif';
+  display: inline-block;
+  transition: all ease 200ms;
+}
+
+.food-resource:hover {
+  transition: all ease 300ms;
+  transform: scale(1.08);
+}
+
+.food-resource-wrapper {
+  width: auto;
+}
+
+#food-resources {
+  margin-left: 2%;
+  color: #ffffff;
+  font-family: 'Gidole-Regular';
+}
+
+#food-resource-name {
+  font-family: 'Gidole-Regular';
+  font-size: 25px;
+  padding-top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+Misc Resources Styling
+*/
+
+.misc-resource {
+  width: 15%;
+  background-color: #ffffff;
+  margin: 2%;
+  height: 25vh;
+  border-radius: 15px;
+  text-align: center;
+  font-family: 'Kollektif';
+  display: inline-block;
+  transition: all ease 200ms;
+}
+
+.misc-resource:hover {
+  transition: all ease 300ms;
+  transform: scale(1.08);
+}
+
+.misc-resource-wrapper {
+  width: auto;
+}
+
+#misc-resources {
+  margin-left: 2%;
+  color: #ffffff;
+  font-family: 'Gidole-Regular';
+}
+
+#misc-resource-name {
+  font-family: 'Gidole-Regular';
+  font-size: 25px;
+  padding-top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+Footer Styling
+*/
+
+.footer {
+  left: 0;
+  bottom: 0;
+  margin-top: 10vh;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding-bottom: 8vh;
+  border-top: solid 3px #ffffff;
+}
+
+#all-rights-reserved {
+  font-family: 'Gidole-Regular';
+  font-size: 20px;
+  float: left;
+  padding-top: 1%;
+}
+
+.footer-nav li{
+  display: inline-block;
+  padding-top: 1%;
+  font-family: 'Gidole-Regular';
+  float: right;
+}
 
 
 

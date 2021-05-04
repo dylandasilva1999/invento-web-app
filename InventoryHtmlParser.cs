@@ -32,6 +32,27 @@ namespace invento_web_app
                 }
             }
 
+            HtmlNode inventoryNode = htmlDoc.GetElementbyId("inventoryItems");
+            HtmlNode recipeNode = htmlDoc.GetElementbyId("recipeItems");
+
+            inventoryNode.RemoveAllChildren();
+            recipeNode.RemoveAllChildren();
+
+            string[] newInventoryItem = {"Wood", "Cobblestone", "Diamonds", "Gold", "Redstone", "Iron", "Coal", "Slime"};
+            string[] newRecipe = {"Pick Axe", "Torch", "Shovel", "Boat", "Diamond Pick Axe", "Iron Sword", "Repeater", "Stone"};
+
+            foreach (string currentInventoryString in newInventoryItem)
+            {
+                HtmlNode newInventoryNode = HtmlNode.CreateNode("<div class='inventory-item'><h1 id='inv-item-name'>" + currentInventoryString + "</h1></div>");
+                inventoryNode.AppendChild(newInventoryNode);
+            }
+
+            foreach (string currentRecipeString in newRecipe)
+            {
+                HtmlNode newRecipeNode = HtmlNode.CreateNode("<div class='recipe-item'><h1 id='recipe-name'>" + currentRecipeString + "</h1></div>");
+                recipeNode.AppendChild(newRecipeNode);
+            }
+
             return htmlDoc.DocumentNode.InnerHtml;
         }
     }

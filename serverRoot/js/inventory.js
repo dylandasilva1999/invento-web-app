@@ -1,5 +1,7 @@
 //Slider functionality from Ionut Daniel https://codepen.io/thenutz/pen/VwYeYEE
-const slider = document.querySelector('.recipe-wrapper');
+
+//Slider Inventory
+const slider = document.querySelector('.inventory-wrapper');
 let isDown = false;
 let startX;
 let scrollLeft;

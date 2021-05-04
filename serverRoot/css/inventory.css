@@ -170,17 +170,80 @@ Header Styling
     margin-top: 3vh;
 }
 
-#heading {
-  font-size: 50px;
-  font-family: 'Kollektif-Bold';
+#inventory-heading {
+  font-size: 45px;
+  font-family: 'Kollektif';
+  color: #4CBEA0;
+  margin: 2%;
 }
 
-.recipe {
+.inventory-item {
   width: 12%;
   background-color: #ffffff;
   margin: 2%;
   height: 20vh;
-  border-radius: 35px;
+  border-radius: 15px;
+  text-align: center;
+  font-family: 'Kollektif';
+  display: inline-block;
+}
+
+.inventory-wrapper {
+  position: relative;
+  overflow-x: scroll;
+  width: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  transition: all 0.2s;
+  transform: scale(1);
+  will-change: transform;
+  user-select: none;
+  cursor: pointer;
+}
+
+.inventory-wrapper.active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  transform: scale(1.02);
+}
+
+#inventory-item-heading {
+  font-size: 28px;
+  color: #ffffff;
+  margin-left: 2%;
+}
+
+.inventory-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+#inv-item-name {
+  font-family: 'Gidole-Regular';
+  font-size: 25px;
+  padding-top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#inv-item-amount {
+  font-family: 'Kollektif-Bold';
+  font-size: 20px;
+  color: #1c2a39;
+}
+
+#recipes-heading {
+  font-size: 45px;
+  font-family: 'Kollektif';
+  color: #4CBEA0;
+  margin: 2%;
+}
+
+.recipe-item {
+  width: 12%;
+  background-color: #ffffff;
+  margin: 2%;
+  height: 20vh;
+  border-radius: 15px;
   text-align: center;
   font-family: 'Kollektif';
   display: inline-block;
@@ -205,7 +268,7 @@ Header Styling
   transform: scale(1.02);
 }
 
-#recipe-heading {
+#recipe-item-heading {
   font-size: 28px;
   color: #ffffff;
   margin-left: 2%;
@@ -213,6 +276,14 @@ Header Styling
 
 .recipe-wrapper::-webkit-scrollbar {
   display: none;
+}
+
+#recipe-name {
+  font-family: 'Gidole-Regular';
+  font-size: 25px;
+  padding-top: 40%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 

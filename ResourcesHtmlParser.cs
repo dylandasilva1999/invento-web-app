@@ -32,17 +32,57 @@ namespace invento_web_app
                 }
             }
 
-            HtmlNode resourcesNode = htmlDoc.GetElementbyId("resourcesItems");
-            Console.WriteLine(resourcesNode.OuterHtml);
+            //Basic Resources Node
+            HtmlNode basicResourcesNode = htmlDoc.GetElementbyId("basicResourcesItems");
 
-            resourcesNode.RemoveAllChildren();
+            //Rare Resources Node
+            HtmlNode rareResourcesNode = htmlDoc.GetElementbyId("rareResourcesItems");
 
-            string[] newResources = {"Wood", "Cobblestone", "Diamonds", "Gold", "Redstone", "Iron", "Coal", "Slime"};
+            //Food Resources Node
+            HtmlNode foodResourcesNode = htmlDoc.GetElementbyId("foodResourcesItems");
 
-            foreach (string currentResourceString in newResources)
+            //Misc Resources Node
+            HtmlNode miscResourcesNode = htmlDoc.GetElementbyId("miscResourcesItems");
+
+            basicResourcesNode.RemoveAllChildren();
+            rareResourcesNode.RemoveAllChildren();
+            foodResourcesNode.RemoveAllChildren();
+            miscResourcesNode.RemoveAllChildren();
+
+            //Basic Resources Array
+            string[] basicResources = {"Oak Wood", "Cobblestone", "Wool", "Sand", "Oak Planks"};
+
+            //Rare Resources Array
+            string[] rareResources = {"Diamond Ignot", "Gold Ignot", "Iron Ignot", "Coal", "Redstone Dust"};
+
+            //Food Resources Array
+            string[] foodResources = {"Wheat", "Melon", "Pumpkin", "Apple", "Carrot"};
+
+            //Misc Resources Array
+            string[] miscResources = {"Leather", "Flint", "String", "Feather", "Bones"};
+
+            foreach (string currentBasicResourceString in basicResources)
             {
-                HtmlNode newResourcesNode = HtmlNode.CreateNode("<div class='resource'>" + currentResourceString + "</div>");
-                resourcesNode.AppendChild(newResourcesNode);
+                HtmlNode newBasicResourcesNode = HtmlNode.CreateNode("<div class='basic-resource'><h1 id='basic-resource-name'>" + currentBasicResourceString + "</h1></div>");
+                basicResourcesNode.AppendChild(newBasicResourcesNode);
+            }
+
+            foreach (string currentRareResourceString in rareResources)
+            {
+                HtmlNode newRareResourcesNode = HtmlNode.CreateNode("<div class='rare-resource'><h1 id='rare-resource-name'>" + currentRareResourceString + "</h1></div>");
+                rareResourcesNode.AppendChild(newRareResourcesNode);
+            }
+
+            foreach (string currentFoodResourceString in foodResources)
+            {
+                HtmlNode newFoodResourcesNode = HtmlNode.CreateNode("<div class='food-resource'><h1 id='food-resource-name'>" + currentFoodResourceString + "</h1></div>");
+                foodResourcesNode.AppendChild(newFoodResourcesNode);
+            }
+
+            foreach (string currentMiscResourceString in miscResources)
+            {
+                HtmlNode newMiscResourcesNode = HtmlNode.CreateNode("<div class='misc-resource'><h1 id='misc-resource-name'>" + currentMiscResourceString + "</h1></div>");
+                miscResourcesNode.AppendChild(newMiscResourcesNode);
             }
             
             return htmlDoc.DocumentNode.InnerHtml;
