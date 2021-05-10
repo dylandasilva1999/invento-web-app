@@ -366,13 +366,22 @@ Founders Section
   transition: all ease 200ms;
   background-color: #ffffff;
   border-radius: 35px;
-  padding: 2.5%;
   margin: 2%;
 }
 
 .technology-card:hover {
   transition: all ease 200ms;
-  transform: scale(1.1);
+  transform: rotate(10deg);
+}
+
+.tech-image {
+  width: 50%;
+  height: 70%;
+  padding: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 10%;
 }
 
 #built-with-heading {
