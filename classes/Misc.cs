@@ -2,10 +2,10 @@ using System;
 
 namespace invento_web_app
 {
-    abstract class Block
+    abstract class Misc
     {
         private int count;
-        protected string blockType;
+        protected string miscBlockType;
 
         public int Count
         {
@@ -24,23 +24,23 @@ namespace invento_web_app
             }
         }
 
-        public string BlockType
+        public string MiscBlockType
         {
             get{
-                return blockType;
+                return miscBlockType;
             }
         }
 
-        public Block()
+        public Misc()
         {
             count = 0;
         }
 
-        public Block(int newCount)
+        public Misc(int newCount)
         {
             count = newCount;
         }
 
-        public abstract void Place();
+        //public abstract void Place();
     }
 }
