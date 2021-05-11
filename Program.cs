@@ -76,6 +76,10 @@ namespace invento_web_app
                         {
                             data = Encoding.UTF8.GetBytes(ResourcesHtmlParser.Process(input));
                         }
+                        else if(path == "/404.html")
+                        {
+                            data = Encoding.UTF8.GetBytes(ErrorHtmlParser.Process(input));
+                        }
                         else
                         {
                             throw new FileNotFoundException("Not a page");
@@ -98,7 +102,8 @@ namespace invento_web_app
                     Console.WriteLine(e.Message);
 
                     byte[] data;
-                    data = Encoding.UTF8.GetBytes("<h2>A 404 Error has Occured</h2>");
+                    
+                    data = Encoding.UTF8.GetBytes("<h2>A 404 Page not Found</h2>");
                    
                     res.ContentType = "text/html";
                     res.ContentEncoding = Encoding.UTF8;
