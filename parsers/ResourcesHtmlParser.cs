@@ -50,38 +50,38 @@ namespace invento_web_app
             miscResourcesNode.RemoveAllChildren();
 
             //Basic Resources Array
-            string[] basicResources = {"Oak Wood", "Cobblestone", "Wool", "Sand", "Oak Planks"};
+            Basic[] basicResourcesArray = {new Wood(1), new Cobblestone(1), new Wool(1), new Sand(1), new WoodPlanks(1)};
 
             //Rare Resources Array
-            string[] rareResources = {"Diamond Ignot", "Gold Ignot", "Iron Ignot", "Coal", "Redstone Dust"};
+            Rare[] rareResourcesArray = {new DiamondIgnot(1), new GoldIgnot(1), new IronIgnot(1), new Coal(1), new RedstoneDust(1)};
 
             //Food Resources Array
-            string[] foodResources = {"Wheat", "Melon", "Pumpkin", "Apple", "Carrot"};
+            Food[] foodResourcesArray = {new Wheat(1), new Melon(1), new Pumpkin(1), new Apple(1), new Carrot(1)};
 
             //Misc Resources Array
-            string[] miscResources = {"Leather", "Flint", "String", "Feather", "Bones"};
+            Misc[] miscResourcesArray = {new Leather(1), new Flint(1), new String(1), new Feather(1), new Bones(1)};
 
-            foreach (string currentBasicResourceString in basicResources)
+            foreach (Basic currentBasicResource in basicResourcesArray)
             {
-                HtmlNode newBasicResourcesNode = HtmlNode.CreateNode("<div class='basic-resource'><h1 id='basic-resource-name'>" + currentBasicResourceString + "</h1></div>");
+                HtmlNode newBasicResourcesNode = HtmlNode.CreateNode("<div class='basic-resource'><h1 id='basic-resource-name'>" + currentBasicResource.BasicBlockType + "</h1></div>");
                 basicResourcesNode.AppendChild(newBasicResourcesNode);
             }
 
-            foreach (string currentRareResourceString in rareResources)
+            foreach (Rare currentRareResource in rareResourcesArray)
             {
-                HtmlNode newRareResourcesNode = HtmlNode.CreateNode("<div class='rare-resource'><h1 id='rare-resource-name'>" + currentRareResourceString + "</h1></div>");
+                HtmlNode newRareResourcesNode = HtmlNode.CreateNode("<div class='rare-resource'><h1 id='rare-resource-name'>" + currentRareResource.RareBlockType + "</h1></div>");
                 rareResourcesNode.AppendChild(newRareResourcesNode);
             }
 
-            foreach (string currentFoodResourceString in foodResources)
+            foreach (Food currentFoodResource in foodResourcesArray)
             {
-                HtmlNode newFoodResourcesNode = HtmlNode.CreateNode("<div class='food-resource'><h1 id='food-resource-name'>" + currentFoodResourceString + "</h1></div>");
+                HtmlNode newFoodResourcesNode = HtmlNode.CreateNode("<div class='food-resource'><h1 id='food-resource-name'>" + currentFoodResource.FoodBlockType + "</h1></div>");
                 foodResourcesNode.AppendChild(newFoodResourcesNode);
             }
 
-            foreach (string currentMiscResourceString in miscResources)
+            foreach (Misc currentMiscResource in miscResourcesArray)
             {
-                HtmlNode newMiscResourcesNode = HtmlNode.CreateNode("<div class='misc-resource'><h1 id='misc-resource-name'>" + currentMiscResourceString + "</h1></div>");
+                HtmlNode newMiscResourcesNode = HtmlNode.CreateNode("<div class='misc-resource'><h1 id='misc-resource-name'>" + currentMiscResource.MiscBlockType + "</h1></div>");
                 miscResourcesNode.AppendChild(newMiscResourcesNode);
             }
             
