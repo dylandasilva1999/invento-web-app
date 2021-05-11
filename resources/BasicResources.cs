@@ -11,7 +11,7 @@ namespace invento_web_app
         }
         public Wood(int newCount): base(newCount)
         {
-            basicBlockType = "Wood Block"; 
+            basicBlockType = "Wood Block";
         }
 
     }
