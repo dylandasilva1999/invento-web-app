@@ -3,7 +3,7 @@ using System;
 namespace invento_web_app
 {
     //Wood inherit from Basic
-    class Wood: Basic 
+    class Wood: Basic, Flammable
     {
         public Wood(): base()
         {
@@ -50,7 +50,7 @@ namespace invento_web_app
     }
 
     //Wool inherit from Basic
-    class Wool: Basic
+    class Wool: Basic, Flammable
     {
         public Wool(): base()
         {
@@ -96,7 +96,7 @@ namespace invento_web_app
     }
 
     //WoodPlanks inherit from Basic
-    class WoodPlanks: Basic
+    class WoodPlanks: Basic, Flammable
     {
         public WoodPlanks(): base()
         {
