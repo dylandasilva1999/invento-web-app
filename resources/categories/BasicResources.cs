@@ -3,17 +3,28 @@ using System;
 namespace invento_web_app
 {
     //Wood inherit from Basic
-    class Wood: Basic
+    class Wood: Basic 
     {
         public Wood(): base()
         {
             basicBlockType = "Wood Block";
+            classType = this;
         }
         public Wood(int newCount): base(newCount)
         {
             basicBlockType = "Wood Block";
         }
 
+        public override void Place()
+        {
+            Count --;
+            Console.WriteLine("Wood has been placed");
+        }
+        public void Burn()
+        {
+            Console.WriteLine("Wood is burning");
+        }
+        
     }
 
     //Cobblestone inherit from Basic
@@ -27,7 +38,15 @@ namespace invento_web_app
         {
             basicBlockType = "Cobblestone Block"; 
         }
-
+        public override void Place()
+        {
+            Count --;
+            Console.WriteLine("Cobblestone has been placed");
+        }
+        public void Melt()
+        {
+            Console.WriteLine("Cobblestone is melting");
+        }
     }
 
     //Wool inherit from Basic
@@ -41,7 +60,16 @@ namespace invento_web_app
         {
             basicBlockType = "Wool Block"; 
         }
+        public override void Place()
+        {
+            Count --;
+            Console.WriteLine("Wool has been placed");
+        }
 
+        public void Burn()
+        {
+            Console.WriteLine("Wool is burning");
+        }
     }
 
     //Sand inherit from Basic
@@ -55,7 +83,16 @@ namespace invento_web_app
         {
             basicBlockType = "Sand Block"; 
         }
+        public override void Place()
+        {
+            Count --;
+            Console.WriteLine("Sand has been placed");
+        }
 
+        public void Melt()
+        {
+            Console.WriteLine("Sand is melting");
+        }
     }
 
     //WoodPlanks inherit from Basic
@@ -69,6 +106,19 @@ namespace invento_web_app
         {
             basicBlockType = "Wood Planks"; 
         }
+        public override void Place()
+        {
+            Count --;
+            Console.WriteLine("Wood Planks has been placed");
+        }
 
+        public void Burn()
+        {
+            Console.WriteLine("Wood Planks are burning");
+        }
+        public void Melt()
+        {
+            Console.WriteLine("Wood Plank is melting");
+        }
     }
 }

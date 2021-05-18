@@ -6,6 +6,7 @@ namespace invento_web_app
     {
         private int count;
         protected string basicBlockType;
+        protected static Basic classType; 
 
         public int Count
         {
@@ -41,6 +42,11 @@ namespace invento_web_app
             count = newCount;
         }
 
-        //public abstract void Place();
+        public static Basic Get()
+        {
+            return classType;
+        }
+
+        public abstract void Place();
     }
 }

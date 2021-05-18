@@ -13,7 +13,11 @@ namespace invento_web_app
         {
             miscBlockType = "Leather"; 
         }
-
+        public override void Place()
+        {
+            Count --;
+            Console.WriteLine("Leather has been placed");
+        }
     }
 
     //Flint inherit from Misc
@@ -27,7 +31,15 @@ namespace invento_web_app
         {
             miscBlockType = "Flint"; 
         }
-
+        public override void Place()
+        {
+            Count --;
+            Console.WriteLine("Leather has been placed");
+        }
+        public void Smelt()
+        {
+            Console.WriteLine("Flint is smelting");
+        }
     }
 
     //String inherit from Misc
@@ -41,7 +53,11 @@ namespace invento_web_app
         {
             miscBlockType = "String"; 
         }
-
+        public override void Place()
+        {
+            Count --;
+            Console.WriteLine("String has been placed");
+        }
     }
 
     //Feather inherit from Misc
@@ -55,7 +71,11 @@ namespace invento_web_app
         {
             miscBlockType = "Feather"; 
         }
-
+        public override void Place()
+        {
+            Count --;
+            Console.WriteLine("Feather has been placed");
+        }
     }
 
     //Bones inherit from Misc
@@ -68,6 +88,11 @@ namespace invento_web_app
         public Bones(int newCount): base(newCount)
         {
             miscBlockType = "Bones";
+        }
+        public override void Place()
+        {
+            Count --;
+            Console.WriteLine("Bones has been placed");
         }
 
     }

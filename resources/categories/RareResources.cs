@@ -13,7 +13,15 @@ namespace invento_web_app
         {
             rareBlockType = "Diamond Ignot"; 
         }
-
+        public override void Place()
+        {
+            Count --;
+            Console.WriteLine("DiamondIgnot has been placed");
+        }
+        public void Smelt()
+        {
+            Console.WriteLine("DiamondIgnot is smelting");
+        }
     }
 
     //GoldIgnot inherit from Rare
@@ -27,7 +35,15 @@ namespace invento_web_app
         {
             rareBlockType = "Gold Ignot"; 
         }
-
+        public override void Place()
+        {
+            Count --;
+            Console.WriteLine("GoldIgnot has been placed");
+        }
+        public void Smelt()
+        {
+            Console.WriteLine("GoldIgnot is smelting");
+        }
     }
 
     //IronIgnot inherit from Rare
@@ -41,7 +57,15 @@ namespace invento_web_app
         {
             rareBlockType = "Iron Ignot"; 
         }
-
+        public override void Place()
+        {
+            Count --;
+            Console.WriteLine("IronIgnot has been placed");
+        }
+        public void Smelt()
+        {
+            Console.WriteLine("IronIgnot is smelting");
+        }
     }
 
     //Coal inherit from Rare
@@ -55,7 +79,19 @@ namespace invento_web_app
         {
             rareBlockType = "Coal"; 
         }
-
+        public override void Place()
+        {
+            Count --;
+            Console.WriteLine("Coal has been placed");
+        }
+        public void Smelt()
+        {
+            Console.WriteLine("Coal is smelting");
+        }
+        public void Melt()
+        {
+            Console.WriteLine("Coal is melting");
+        }
     }
 
     //RedstoneDust inherit from Rare
@@ -69,6 +105,10 @@ namespace invento_web_app
         {
             rareBlockType = "Redstone Dust";
         }
-
+        public override void Place()
+        {
+            Count --;
+            Console.WriteLine("RedstoneDust has been placed");
+        }
     }
 }

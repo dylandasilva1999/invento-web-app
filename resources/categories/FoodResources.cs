@@ -13,7 +13,11 @@ namespace invento_web_app
         {
             foodBlockType = "Wheat"; 
         }
-
+        public override void Place()
+        {
+            Count --;
+            Console.WriteLine("Wheat has been placed");
+        }
     }
 
     //GoldIgnot inherit from Food
@@ -27,7 +31,11 @@ namespace invento_web_app
         {
             foodBlockType = "Melon"; 
         }
-
+        public override void Place()
+        {
+            Count --;
+            Console.WriteLine("Melon has been placed");
+        }
     }
 
     //IronIgnot inherit from Food
@@ -41,7 +49,11 @@ namespace invento_web_app
         {
             foodBlockType = "Pumpkin"; 
         }
-
+        public override void Place()
+        {
+            Count --;
+            Console.WriteLine("Pumpkin has been placed");
+        }
     }
 
     //Coal inherit from Food
@@ -55,7 +67,11 @@ namespace invento_web_app
         {
             foodBlockType = "Apple"; 
         }
-
+        public override void Place()
+        {
+            Count --;
+            Console.WriteLine("Apple has been placed");
+        }
     }
 
     //RedstoneDust inherit from Food
@@ -69,6 +85,10 @@ namespace invento_web_app
         {
             foodBlockType = "Carrot";
         }
-
+        public override void Place()
+        {
+            Count --;
+            Console.WriteLine("Carrot has been placed");
+        }
     }
 }

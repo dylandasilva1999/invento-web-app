@@ -6,6 +6,7 @@ namespace invento_web_app
     {
         private int count;
         protected string rareBlockType;
+        protected static Rare classType;
 
         public int Count
         {
@@ -41,6 +42,11 @@ namespace invento_web_app
             count = newCount;
         }
 
-        //public abstract void Place();
+        public static Rare Get()
+        {
+            return classType;
+        }
+
+        public abstract void Place();
     }
 }
