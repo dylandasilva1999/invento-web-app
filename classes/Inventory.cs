@@ -9,7 +9,7 @@ namespace invento_web_app
 
         public Inventory()
         {
-            
+            items.Add(new Cobblestone(10));
         }
 
         public ArrayList Items

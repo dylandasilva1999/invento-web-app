@@ -119,6 +119,8 @@ namespace invento_web_app
 
         static void Main(string[] args)
         {
+            Inventory inventory = new Inventory();
+
             listener = new HttpListener();
             listener.Prefixes.Add(url);
             listener.Start();
