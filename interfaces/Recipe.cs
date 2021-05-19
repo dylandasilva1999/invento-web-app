@@ -5,77 +5,29 @@ namespace invento_web_app
 {
     class Recipe
     {
-        private Basic[,] basicInputs;
-        private Food[,] foodInputs;
-        private Misc[,] miscInputs;
-        private Rare[,] rareInputs;
+        private Item[,] inputs;
         private Craft result;
 
-        public Recipe(Craft newResult, Basic[,] newBasicInputs, Food[,] newFoodInputs, Misc[,] newMiscInputs, Rare[,] newRareInputs)
+        public Recipe(Craft newResult, Item[,] newInputs)
         {
-            basicInputs = newBasicInputs;
-            foodInputs = newFoodInputs;
-            miscInputs = newMiscInputs;
-            rareInputs = newRareInputs;
+            inputs = newInputs;
             result = newResult;
-            result.SetRecipes(this);
+            result.SetRecipe(this);
         }
 
-        public Basic[,] BasicInputs
+        public Item[,] Inputs
         {
             get
             {
-                return basicInputs;
-            }
-        }
-        public Food[,] FoodInputs
-        {
-            get
-            {
-                return foodInputs;
-            }
-        }
-        public Misc[,] MiscInputs
-        {
-            get
-            {
-                return miscInputs;
-            }
-        }
-        public Rare[,] RareInputs
-        {
-            get
-            {
-                return rareInputs;
+                return inputs;
             }
         }
 
-        public Basic BasicResult
+        public Item Result
         {
             get
             {
-                return (Basic) result;
-            }
-        }
-        public Food FoodResult
-        {
-            get
-            {
-                return (Food) result;
-            }
-        }
-        public Misc MiscResult
-        {
-            get
-            {
-                return (Misc) result;
-            }
-        }
-        public Rare RareResult
-        {
-            get
-            {
-                return (Rare) result;
+                return (Item) result;
             }
         }
 
@@ -84,69 +36,18 @@ namespace invento_web_app
             var map = new Dictionary<string, int>();
 
             //Check through each resource item in the Basic Class
-            foreach (Basic curBasicBlock in basicInputs)
+            foreach (Basic curItem in inputs)
             {
-                if (curBasicBlock != null)
+                if (curItem != null)
                 {
                     int count;
-                    if (map.TryGetValue(curBasicBlock.BasicBlockType, out count))
+                    if (map.TryGetValue(curItem.BlockType, out count))
                     {
-                        map[curBasicBlock.BasicBlockType] += 1;
+                        map[curItem.BlockType] += 1;
                     }
                     else
                     {
-                        map.Add(curBasicBlock.BasicBlockType,1);
-                    }
-                }
-            }
-
-            //Check through each resource item in the Food Class
-            foreach (Food curFoodBlock in foodInputs)
-            {
-                if (curFoodBlock != null)
-                {
-                    int count;
-                    if (map.TryGetValue(curFoodBlock.FoodBlockType, out count))
-                    {
-                        map[curFoodBlock.FoodBlockType] += 1;
-                    }
-                    else
-                    {
-                        map.Add(curFoodBlock.FoodBlockType,1);
-                    }
-                }
-            }
-
-            //Check through each resource item in the Misc Class
-            foreach (Misc curMiscBlock in miscInputs)
-            {
-                if (curMiscBlock != null)
-                {
-                    int count;
-                    if (map.TryGetValue(curMiscBlock.MiscBlockType, out count))
-                    {
-                        map[curMiscBlock.MiscBlockType] += 1;
-                    }
-                    else
-                    {
-                        map.Add(curMiscBlock.MiscBlockType,1);
-                    }
-                }
-            }
-
-            //Check through each resource item in the Rare Class
-            foreach (Rare curRareBlock in rareInputs)
-            {
-                if (curRareBlock != null)
-                {
-                    int count;
-                    if (map.TryGetValue(curRareBlock.RareBlockType, out count))
-                    {
-                        map[curRareBlock.RareBlockType] += 1;
-                    }
-                    else
-                    {
-                        map.Add(curRareBlock.RareBlockType,1);
+                        map.Add(curItem.BlockType,1);
                     }
                 }
             }

@@ -1,9 +1,8 @@
 namespace invento_web_app
-
 {
     interface Craft
     {
-        void SetRecipes(Recipe newRecipe);
+        void SetRecipe(Recipe newRecipe);
         Recipe GetRecipe();
     }
 }

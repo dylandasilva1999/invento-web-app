@@ -8,6 +8,7 @@ namespace invento_web_app
         public Leather(): base()
         {
             miscBlockType = "Leather";
+            classType = this;
         }
         public Leather(int newCount): base(newCount)
         {
@@ -26,6 +27,7 @@ namespace invento_web_app
         public Flint(): base()
         {
             miscBlockType = "Flint";
+            classType = this;
         }
         public Flint(int newCount): base(newCount)
         {
@@ -48,6 +50,7 @@ namespace invento_web_app
         public String(): base()
         {
             miscBlockType = "String";
+            classType = this;
         }
         public String(int newCount): base(newCount)
         {
@@ -66,6 +69,7 @@ namespace invento_web_app
         public Feather(): base()
         {
             miscBlockType = "Feather";
+            classType = this;
         }
         public Feather(int newCount): base(newCount)
         {
@@ -84,6 +88,7 @@ namespace invento_web_app
         public Bones(): base()
         {
             miscBlockType = "Bones";
+            classType = this;
         }
         public Bones(int newCount): base(newCount)
         {

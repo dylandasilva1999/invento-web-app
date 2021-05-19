@@ -50,7 +50,7 @@ namespace invento_web_app
             miscResourcesNode.RemoveAllChildren();
 
             //Basic Resources Array
-            Basic[] basicResourcesArray = {new Wood(1), new Cobblestone(1), new Wool(1), new Sand(1), new WoodPlanks(1)};
+            Basic[] basicResourcesArray = {new Wood(1), new Cobblestone(1), new Wool(1), new Sand(1), new WoodPlank(1)};
 
             //Rare Resources Array
             Rare[] rareResourcesArray = {new DiamondIgnot(1), new GoldIgnot(1), new IronIgnot(1), new Coal(1), new RedstoneDust(1)};

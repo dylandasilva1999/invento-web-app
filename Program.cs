@@ -120,6 +120,7 @@ namespace invento_web_app
         static void Main(string[] args)
         {
             Inventory inventory = new Inventory();
+            ArrayList array = inventory.Items;
 
             listener = new HttpListener();
             listener.Prefixes.Add(url);

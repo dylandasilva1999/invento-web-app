@@ -33,6 +33,7 @@ namespace invento_web_app
         public Cobblestone(): base()
         {
             basicBlockType = "Cobblestone Block";
+            classType = this;
         }
         public Cobblestone(int newCount): base(newCount)
         {
@@ -55,6 +56,7 @@ namespace invento_web_app
         public Wool(): base()
         {
             basicBlockType = "Wool Block";
+            classType = this;
         }
         public Wool(int newCount): base(newCount)
         {
@@ -78,6 +80,7 @@ namespace invento_web_app
         public Sand(): base()
         {
             basicBlockType = "Sand Block";
+            classType = this;
         }
         public Sand(int newCount): base(newCount)
         {
@@ -96,13 +99,14 @@ namespace invento_web_app
     }
 
     //WoodPlanks inherit from Basic
-    class WoodPlanks: Basic, Flammable
+    class WoodPlank: Basic, Flammable
     {
-        public WoodPlanks(): base()
+        public WoodPlank(): base()
         {
             basicBlockType = "Wood Planks";
+            classType = this;
         }
-        public WoodPlanks(int newCount): base(newCount)
+        public WoodPlank(int newCount): base(newCount)
         {
             basicBlockType = "Wood Planks"; 
         }

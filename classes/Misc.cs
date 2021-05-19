@@ -2,29 +2,10 @@ using System;
 
 namespace invento_web_app
 {
-    abstract class Misc
+    abstract class Misc: Item
     {
         private int count;
         protected string miscBlockType;
-        protected static Misc classType; 
-
-        public int Count
-        {
-            get{
-                return count;
-            }
-            set{
-                if(value < 0)
-                {   
-                    count = -value;
-                } else 
-                {
-                    count = value;
-                }
-                
-            }
-        }
-
         public string MiscBlockType
         {
             get{
@@ -41,12 +22,5 @@ namespace invento_web_app
         {
             count = newCount;
         }
-
-        public static Misc Get()
-        {
-            return classType;
-        }
-
-        public abstract void Place();
     }
 }

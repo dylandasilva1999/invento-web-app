@@ -2,29 +2,10 @@ using System;
 
 namespace invento_web_app
 {
-    abstract class Rare
+    abstract class Rare: Item
     {
         private int count;
         protected string rareBlockType;
-        protected static Rare classType;
-
-        public int Count
-        {
-            get{
-                return count;
-            }
-            set{
-                if(value < 0)
-                {   
-                    count = -value;
-                } else 
-                {
-                    count = value;
-                }
-                
-            }
-        }
-
         public string RareBlockType
         {
             get{
@@ -41,12 +22,5 @@ namespace invento_web_app
         {
             count = newCount;
         }
-
-        public static Rare Get()
-        {
-            return classType;
-        }
-
-        public abstract void Place();
     }
 }

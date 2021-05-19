@@ -8,6 +8,7 @@ namespace invento_web_app
         public Wheat(): base()
         {
             foodBlockType = "Wheat";
+            classType = this;
         }
         public Wheat(int newCount): base(newCount)
         {
@@ -26,6 +27,7 @@ namespace invento_web_app
         public Melon(): base()
         {
             foodBlockType = "Melon";
+            classType = this;
         }
         public Melon(int newCount): base(newCount)
         {
@@ -44,6 +46,7 @@ namespace invento_web_app
         public Pumpkin(): base()
         {
             foodBlockType = "Pumpkin";
+            classType = this;
         }
         public Pumpkin(int newCount): base(newCount)
         {
@@ -62,6 +65,7 @@ namespace invento_web_app
         public Apple(): base()
         {
             foodBlockType = "Apple";
+            classType = this;
         }
         public Apple(int newCount): base(newCount)
         {
@@ -80,6 +84,7 @@ namespace invento_web_app
         public Carrot(): base()
         {
             foodBlockType = "Carrot";
+            classType = this;
         }
         public Carrot(int newCount): base(newCount)
         {

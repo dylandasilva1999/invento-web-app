@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="HtmlAgilityPack" Version="1.11.33" />
+    <PackageReference Include="MySql.Data" Version="8.0.25" />
   </ItemGroup>
 
 </Project>

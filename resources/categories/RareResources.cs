@@ -8,6 +8,7 @@ namespace invento_web_app
         public DiamondIgnot(): base()
         {
             rareBlockType = "Diamond Ignot";
+            classType = this;
         }
         public DiamondIgnot(int newCount): base(newCount)
         {
@@ -30,6 +31,7 @@ namespace invento_web_app
         public GoldIgnot(): base()
         {
             rareBlockType = "Gold Ignot";
+            classType = this;
         }
         public GoldIgnot(int newCount): base(newCount)
         {
@@ -52,6 +54,7 @@ namespace invento_web_app
         public IronIgnot(): base()
         {
             rareBlockType = "Iron Ignot";
+            classType = this;
         }
         public IronIgnot(int newCount): base(newCount)
         {
@@ -74,6 +77,7 @@ namespace invento_web_app
         public Coal(): base()
         {
             rareBlockType = "Coal";
+            classType = this;
         }
         public Coal(int newCount): base(newCount)
         {
@@ -100,6 +104,7 @@ namespace invento_web_app
         public RedstoneDust(): base()
         {
             rareBlockType = "Redstone Dust";
+            classType = this;
         }
         public RedstoneDust(int newCount): base(newCount)
         {
