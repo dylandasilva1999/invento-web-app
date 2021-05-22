@@ -207,6 +207,18 @@ Basic Resources Styling
   width: auto;
 }
 
+.resource-image {
+  width: 55%;
+  height: 55%;
+  margin-top: 12%;
+  transition: all ease 300ms;
+}
+
+.resource-image:hover {
+  transition: all ease 200ms;
+  transform: rotate(10deg);
+}
+
 #basic-resources {
   margin-left: 2%;
   color: #ffffff;
@@ -216,7 +228,7 @@ Basic Resources Styling
 #basic-resource-name {
   font-family: 'Gidole-Regular';
   font-size: 25px;
-  padding-top: 40%;
+  padding-top: 6%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -255,7 +267,7 @@ Rare Resources Styling
 #rare-resource-name {
   font-family: 'Gidole-Regular';
   font-size: 25px;
-  padding-top: 40%;
+  padding-top: 6%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -294,7 +306,7 @@ Food Resources Styling
 #food-resource-name {
   font-family: 'Gidole-Regular';
   font-size: 25px;
-  padding-top: 40%;
+  padding-top: 6%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -333,7 +345,7 @@ Misc Resources Styling
 #misc-resource-name {
   font-family: 'Gidole-Regular';
   font-size: 25px;
-  padding-top: 40%;
+  padding-top: 6%;
   margin-left: auto;
   margin-right: auto;
 }

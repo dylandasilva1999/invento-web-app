@@ -63,25 +63,25 @@ namespace invento_web_app
 
             foreach (Basic currentBasicResource in basicResourcesArray)
             {
-                HtmlNode newBasicResourcesNode = HtmlNode.CreateNode("<div class='basic-resource'><h1 id='basic-resource-name'>" + currentBasicResource.BasicBlockType + "</h1></div>");
+                HtmlNode newBasicResourcesNode = HtmlNode.CreateNode("<div class='basic-resource'><img class='resource-image' src='" + currentBasicResource.Image + "'><h1 id='basic-resource-name'>" + currentBasicResource.BasicBlockType + "</h1></div>");
                 basicResourcesNode.AppendChild(newBasicResourcesNode);
             }
 
             foreach (Rare currentRareResource in rareResourcesArray)
             {
-                HtmlNode newRareResourcesNode = HtmlNode.CreateNode("<div class='rare-resource'><h1 id='rare-resource-name'>" + currentRareResource.RareBlockType + "</h1></div>");
+                HtmlNode newRareResourcesNode = HtmlNode.CreateNode("<div class='rare-resource'><img class='resource-image' src='" + currentRareResource.Image + "'><h1 id='rare-resource-name'>" + currentRareResource.RareBlockType + "</h1></div>");
                 rareResourcesNode.AppendChild(newRareResourcesNode);
             }
 
             foreach (Food currentFoodResource in foodResourcesArray)
             {
-                HtmlNode newFoodResourcesNode = HtmlNode.CreateNode("<div class='food-resource'><h1 id='food-resource-name'>" + currentFoodResource.FoodBlockType + "</h1></div>");
+                HtmlNode newFoodResourcesNode = HtmlNode.CreateNode("<div class='food-resource'><img class='resource-image' src='" + currentFoodResource.Image + "'><h1 id='food-resource-name'>" + currentFoodResource.FoodBlockType + "</h1></div>");
                 foodResourcesNode.AppendChild(newFoodResourcesNode);
             }
 
             foreach (Misc currentMiscResource in miscResourcesArray)
             {
-                HtmlNode newMiscResourcesNode = HtmlNode.CreateNode("<div class='misc-resource'><h1 id='misc-resource-name'>" + currentMiscResource.MiscBlockType + "</h1></div>");
+                HtmlNode newMiscResourcesNode = HtmlNode.CreateNode("<div class='misc-resource'><img class='resource-image' src='" + currentMiscResource.Image + "'><h1 id='misc-resource-name'>" + currentMiscResource.MiscBlockType + "</h1></div>");
                 miscResourcesNode.AppendChild(newMiscResourcesNode);
             }
             

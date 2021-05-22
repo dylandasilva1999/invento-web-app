@@ -6,6 +6,7 @@ namespace invento_web_app
     {
         private int count;
         protected string blockType;
+        protected string image;
         protected static Item classType;
 
         public int Count
@@ -29,6 +30,13 @@ namespace invento_web_app
         {
             get{
                 return blockType;
+            }
+        }
+        public string Image
+        {
+            get
+            {
+                return image;
             }
         }
 

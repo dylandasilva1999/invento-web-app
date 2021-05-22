@@ -9,10 +9,12 @@ namespace invento_web_app
         {
             rareBlockType = "Diamond Ignot";
             classType = this;
+            image = "img/images/rare/diamond.png";
         }
         public DiamondIgnot(int newCount): base(newCount)
         {
-            rareBlockType = "Diamond Ignot"; 
+            rareBlockType = "Diamond Ignot";
+            image = "img/images/rare/diamond.png";
         }
         public override void Place()
         {
@@ -32,10 +34,12 @@ namespace invento_web_app
         {
             rareBlockType = "Gold Ignot";
             classType = this;
+            image = "img/images/rare/gold.png";
         }
         public GoldIgnot(int newCount): base(newCount)
         {
-            rareBlockType = "Gold Ignot"; 
+            rareBlockType = "Gold Ignot";
+            image = "img/images/rare/gold.png";
         }
         public override void Place()
         {
@@ -55,10 +59,12 @@ namespace invento_web_app
         {
             rareBlockType = "Iron Ignot";
             classType = this;
+            image = "img/images/rare/iron.png";
         }
         public IronIgnot(int newCount): base(newCount)
         {
-            rareBlockType = "Iron Ignot"; 
+            rareBlockType = "Iron Ignot";
+            image = "img/images/rare/iron.png"; 
         }
         public override void Place()
         {
@@ -78,10 +84,12 @@ namespace invento_web_app
         {
             rareBlockType = "Coal";
             classType = this;
+            image = "img/images/rare/coal.png";
         }
         public Coal(int newCount): base(newCount)
         {
-            rareBlockType = "Coal"; 
+            rareBlockType = "Coal";
+            image = "img/images/rare/coal.png"; 
         }
         public override void Place()
         {
@@ -105,10 +113,12 @@ namespace invento_web_app
         {
             rareBlockType = "Redstone Dust";
             classType = this;
+            image = "img/images/rare/redstone.png";
         }
         public RedstoneDust(int newCount): base(newCount)
         {
             rareBlockType = "Redstone Dust";
+            image = "img/images/rare/redstone.png";
         }
         public override void Place()
         {

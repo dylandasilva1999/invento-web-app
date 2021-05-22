@@ -9,10 +9,12 @@ namespace invento_web_app
         {
             miscBlockType = "Leather";
             classType = this;
+            image = "img/images/misc/leather.png";
         }
         public Leather(int newCount): base(newCount)
         {
-            miscBlockType = "Leather"; 
+            miscBlockType = "Leather";
+            image = "img/images/misc/leather.png"; 
         }
         public override void Place()
         {
@@ -28,10 +30,12 @@ namespace invento_web_app
         {
             miscBlockType = "Flint";
             classType = this;
+            image = "img/images/misc/flint.png";
         }
         public Flint(int newCount): base(newCount)
         {
-            miscBlockType = "Flint"; 
+            miscBlockType = "Flint";
+            image = "img/images/misc/flint.png"; 
         }
         public override void Place()
         {
@@ -51,10 +55,12 @@ namespace invento_web_app
         {
             miscBlockType = "String";
             classType = this;
+            image = "img/images/misc/string.png";
         }
         public String(int newCount): base(newCount)
         {
-            miscBlockType = "String"; 
+            miscBlockType = "String";
+            image = "img/images/misc/string.png";
         }
         public override void Place()
         {
@@ -70,10 +76,12 @@ namespace invento_web_app
         {
             miscBlockType = "Feather";
             classType = this;
+            image = "img/images/misc/feather.png";
         }
         public Feather(int newCount): base(newCount)
         {
-            miscBlockType = "Feather"; 
+            miscBlockType = "Feather";
+            image = "img/images/misc/feather.png";
         }
         public override void Place()
         {
@@ -89,10 +97,12 @@ namespace invento_web_app
         {
             miscBlockType = "Bones";
             classType = this;
+            image = "img/images/misc/bones.png";
         }
         public Bones(int newCount): base(newCount)
         {
             miscBlockType = "Bones";
+            image = "img/images/misc/bones.png";
         }
         public override void Place()
         {

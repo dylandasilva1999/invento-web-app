@@ -9,10 +9,12 @@ namespace invento_web_app
         {
             foodBlockType = "Wheat";
             classType = this;
+            image = "img/images/food/wheat.png";
         }
         public Wheat(int newCount): base(newCount)
         {
-            foodBlockType = "Wheat"; 
+            foodBlockType = "Wheat";
+            image = "img/images/food/wheat.png";
         }
         public override void Place()
         {
@@ -28,10 +30,12 @@ namespace invento_web_app
         {
             foodBlockType = "Melon";
             classType = this;
+            image = "img/images/food/melon.png";
         }
         public Melon(int newCount): base(newCount)
         {
-            foodBlockType = "Melon"; 
+            foodBlockType = "Melon";
+            image = "img/images/food/melon.png";
         }
         public override void Place()
         {
@@ -47,10 +51,12 @@ namespace invento_web_app
         {
             foodBlockType = "Pumpkin";
             classType = this;
+            image = "img/images/food/pumpkin.png";
         }
         public Pumpkin(int newCount): base(newCount)
         {
-            foodBlockType = "Pumpkin"; 
+            foodBlockType = "Pumpkin";
+            image = "img/images/food/pumpkin.png"; 
         }
         public override void Place()
         {
@@ -66,10 +72,12 @@ namespace invento_web_app
         {
             foodBlockType = "Apple";
             classType = this;
+            image = "img/images/food/apple.png";
         }
         public Apple(int newCount): base(newCount)
         {
-            foodBlockType = "Apple"; 
+            foodBlockType = "Apple";
+            image = "img/images/food/apple.png";
         }
         public override void Place()
         {
@@ -84,11 +92,13 @@ namespace invento_web_app
         public Carrot(): base()
         {
             foodBlockType = "Carrot";
+            image = "img/images/food/carrot.png";
             classType = this;
         }
         public Carrot(int newCount): base(newCount)
         {
             foodBlockType = "Carrot";
+            image = "img/images/food/carrot.png";
         }
         public override void Place()
         {

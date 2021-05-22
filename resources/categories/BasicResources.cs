@@ -9,10 +9,12 @@ namespace invento_web_app
         {
             basicBlockType = "Wood Block";
             classType = this;
+            image = "img/images/basic/log.png";
         }
         public Wood(int newCount): base(newCount)
         {
             basicBlockType = "Wood Block";
+            image = "img/images/basic/log.png";
         }
 
         public override void Place()
@@ -34,10 +36,12 @@ namespace invento_web_app
         {
             basicBlockType = "Cobblestone Block";
             classType = this;
+            image = "img/images/basic/cobblestone.png";
         }
         public Cobblestone(int newCount): base(newCount)
         {
-            basicBlockType = "Cobblestone Block"; 
+            basicBlockType = "Cobblestone Block";
+            image = "img/images/basic/cobblestone.png";
         }
         public override void Place()
         {
@@ -57,10 +61,12 @@ namespace invento_web_app
         {
             basicBlockType = "Wool Block";
             classType = this;
+            image = "img/images/basic/wool.png";
         }
         public Wool(int newCount): base(newCount)
         {
-            basicBlockType = "Wool Block"; 
+            basicBlockType = "Wool Block";
+            image = "img/images/basic/wool.png";
         }
         public override void Place()
         {
@@ -81,10 +87,12 @@ namespace invento_web_app
         {
             basicBlockType = "Sand Block";
             classType = this;
+            image = "img/images/basic/sand.png";
         }
         public Sand(int newCount): base(newCount)
         {
-            basicBlockType = "Sand Block"; 
+            basicBlockType = "Sand Block";
+            image = "img/images/basic/sand.png";
         }
         public override void Place()
         {
@@ -105,10 +113,12 @@ namespace invento_web_app
         {
             basicBlockType = "Wood Planks";
             classType = this;
+            image = "img/images/basic/plank.png";
         }
         public WoodPlank(int newCount): base(newCount)
         {
-            basicBlockType = "Wood Planks"; 
+            basicBlockType = "Wood Planks";
+            image = "img/images/basic/plank.png";
         }
         public override void Place()
         {
