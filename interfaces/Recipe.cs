@@ -35,8 +35,8 @@ namespace invento_web_app
         {
             var map = new Dictionary<string, int>();
 
-            //Check through each resource item in the Basic Class
-            foreach (Basic curItem in inputs)
+            //Check through each resource item in the Item Class
+            foreach (Item curItem in inputs)
             {
                 if (curItem != null)
                 {
