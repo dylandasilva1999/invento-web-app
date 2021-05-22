@@ -282,7 +282,8 @@ namespace invento_web_app
 
         public static ArrayList Recipes
         {
-            get{
+            get
+            {
                 return recipes;
             }
         }

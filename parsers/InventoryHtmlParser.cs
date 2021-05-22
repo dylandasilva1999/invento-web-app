@@ -32,18 +32,25 @@ namespace invento_web_app
                 }
             }
 
+            //GET INVENTORY LIST FROM FRONTEND
             HtmlNode inventoryNode = htmlDoc.GetElementbyId("inventoryItems");
+            //GET RECIPES LIST FROM FRONTEND
             HtmlNode recipeNode = htmlDoc.GetElementbyId("recipeItems");
 
-            inventoryNode.RemoveAllChildren();
-            recipeNode.RemoveAllChildren();
-
-            string[] newInventoryItem = {"Wood", "Cobblestone", "Diamonds", "Gold", "Redstone", "Iron", "Coal", "Slime"};
             string[] newRecipe = {"Pick Axe", "Torch", "Shovel", "Boat", "Diamond Pick Axe", "Iron Sword", "Repeater", "Stone"};
 
-            foreach (string currentInventoryString in newInventoryItem)
+            //REMOVE ALL CHILDREN FROM INVENTORY LIST
+            inventoryNode.RemoveAllChildren();
+            //REMOVE ALL CHILDREN FROM RECIPES LIST
+            recipeNode.RemoveAllChildren();
+
+            // CREATE A NEW INSTANCE OF INVENTORY
+            Inventory inventory = new Inventory();
+
+            //SHOW INVENTORY ITEMS TO FRONTEND
+            foreach (Item item in inventory.Items)
             {
-                HtmlNode newInventoryNode = HtmlNode.CreateNode("<div class='inventory-item'><h1 id='inv-item-name'>" + currentInventoryString + "</h1></div>");
+                HtmlNode newInventoryNode = HtmlNode.CreateNode("<div class='inventory-item'><h1 id='inv-item-name'>" + item.BlockType + "</h1></div>");
                 inventoryNode.AppendChild(newInventoryNode);
             }
 

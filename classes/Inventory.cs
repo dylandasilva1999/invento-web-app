@@ -6,12 +6,9 @@ namespace invento_web_app
     class Inventory
     {
         private static ArrayList items = new ArrayList();
-
         public Inventory()
         {
             // WOOD ITEMS
-            items.Add(new Wood(1));
-            items.Add(new WoodPlank(1));
             items.Add(new WoodHoe(1));
             items.Add(new WoodAxe(1));
             items.Add(new WoodPickAxe(1));
@@ -19,7 +16,6 @@ namespace invento_web_app
             items.Add(new WoodSword(1));
 
             // STONE ITEMS
-            items.Add(new Cobblestone(1));
             items.Add(new StoneHoe(1));
             items.Add(new StonePickAxe(1));
             items.Add(new StoneAxe(1));
@@ -27,7 +23,6 @@ namespace invento_web_app
             items.Add(new StoneSword(1));
             
             // IRON ITEMS
-            items.Add(new IronIgnot(1));
             items.Add(new IronHoe(1));
             items.Add(new IronPickAxe(1));
             items.Add(new IronAxe(1));
@@ -35,7 +30,6 @@ namespace invento_web_app
             items.Add(new IronSword(1));
 
             // GOLD ITEMS
-            items.Add(new GoldIgnot(1));
             items.Add(new GoldHoe(1));
             items.Add(new GoldPickAxe(1));
             items.Add(new GoldAxe(1));
@@ -43,7 +37,6 @@ namespace invento_web_app
             items.Add(new GoldSword(1));
 
             // DIAMOND ITEMS
-            items.Add(new DiamondIgnot(1));
             items.Add(new DiamondHoe(1));
             items.Add(new DiamondPickAxe(1));
             items.Add(new DiamondAxe(1));
@@ -75,20 +68,6 @@ namespace invento_web_app
             items.Add(new RedstoneTorch(10));
             items.Add(new Stick(10));
             items.Add(new Torch(10));
-            items.Add(new RedstoneDust(10));
-            items.Add(new Wool(10));
-            items.Add(new Sand(10));
-            items.Add(new Apple(10));
-            items.Add(new Wheat(10));
-            items.Add(new MelonSlice(10));
-            items.Add(new Pumpkin(10));
-            items.Add(new Carrot(10));
-            items.Add(new Leather(10));
-            items.Add(new Flint(10));
-            items.Add(new String(10));
-            items.Add(new Feather(10));
-            items.Add(new Bones(10));
-            items.Add(new Coal(10));
         }
 
         public ArrayList Items
