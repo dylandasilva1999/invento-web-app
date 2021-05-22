@@ -2,20 +2,21 @@ using System;
 
 namespace invento_web_app
 {
-    class Stick: Basic, Craft
+    class RedstoneTorch: Item, Craft
     {
         private Recipe recipe;
 
-        public Stick(int newCount): base(newCount)
+        public RedstoneTorch(int newCount): base(newCount)
         {
-            basicBlockType = "Stick material";
+            blockType = "Redstone Torch";
             classType = this;
+            image = "img/images/crafted/items/redstone_torch.png";
         }
 
         public override void Place()
         {
             Count--;
-            Console.WriteLine("Stick has been placed");
+            Console.WriteLine("Redstone Torch has been placed");
         }
 
         public Recipe GetRecipe()

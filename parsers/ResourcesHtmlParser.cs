@@ -56,7 +56,7 @@ namespace invento_web_app
             Rare[] rareResourcesArray = {new DiamondIgnot(1), new GoldIgnot(1), new IronIgnot(1), new Coal(1), new RedstoneDust(1)};
 
             //Food Resources Array
-            Food[] foodResourcesArray = {new Wheat(1), new Melon(1), new Pumpkin(1), new Apple(1), new Carrot(1)};
+            Food[] foodResourcesArray = {new Wheat(1), new MelonSlice(1), new Pumpkin(1), new Apple(1), new Carrot(1)};
 
             //Misc Resources Array
             Misc[] miscResourcesArray = {new Leather(1), new Flint(1), new String(1), new Feather(1), new Bones(1)};

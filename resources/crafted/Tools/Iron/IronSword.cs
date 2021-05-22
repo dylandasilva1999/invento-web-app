@@ -2,14 +2,15 @@ using System;
 
 namespace invento_web_app
 {
-    class IronSword: Basic, Craft
+    class IronSword: Item, Craft
     {
         private Recipe recipe;
 
         public IronSword(int newCount): base(newCount)
         {
-            basicBlockType = "Iron Sword";
+            blockType = "Iron Sword";
             classType = this;
+            image = "img/images/crafted/tools/diamond/iron_sword.png";
         }
 
         public override void Place()

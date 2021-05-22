@@ -2,14 +2,15 @@ using System;
 
 namespace invento_web_app
 {
-    class GoldShovel: Basic, Craft
+    class GoldShovel: Item, Craft
     {
         private Recipe recipe;
 
         public GoldShovel(int newCount): base(newCount)
         {
-            basicBlockType = "Gold Shovel";
+            blockType = "Gold Shovel";
             classType = this;
+            image = "img/images/crafted/tools/diamond/gold_shovel.png";
         }
 
         public override void Place()

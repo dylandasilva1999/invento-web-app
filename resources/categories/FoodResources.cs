@@ -24,18 +24,18 @@ namespace invento_web_app
     }
 
     //GoldIgnot inherit from Food
-    class Melon: Food
+    class MelonSlice: Food
     {
-        public Melon(): base()
+        public MelonSlice(): base()
         {
-            foodBlockType = "Melon";
+            foodBlockType = "Melon Slice";
             classType = this;
-            image = "img/images/food/melon.png";
+            image = "img/images/food/melon_slice.png";
         }
-        public Melon(int newCount): base(newCount)
+        public MelonSlice(int newCount): base(newCount)
         {
-            foodBlockType = "Melon";
-            image = "img/images/food/melon.png";
+            foodBlockType = "Melon Slice";
+            image = "img/images/food/melon_slice.png";
         }
         public override void Place()
         {

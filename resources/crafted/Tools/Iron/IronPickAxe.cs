@@ -2,14 +2,15 @@ using System;
 
 namespace invento_web_app
 {
-    class IronPickAxe: Basic, Craft
+    class IronPickAxe: Item, Craft
     {
         private Recipe recipe;
 
         public IronPickAxe(int newCount): base(newCount)
         {
-            basicBlockType = "Iron Pick Axe";
+            blockType = "Iron Pick Axe";
             classType = this;
+            image = "img/images/crafted/tools/diamond/iron_pick_axe.png";
         }
 
         public override void Place()

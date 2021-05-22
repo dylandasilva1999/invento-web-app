@@ -2,15 +2,15 @@ using System;
 
 namespace invento_web_app
 {
-    class DiamondAxe: Basic, Craft
+    class DiamondAxe: Item, Craft
     {
         private Recipe recipe;
 
         public DiamondAxe(int newCount): base(newCount)
         {
-            basicBlockType = "Diamond Axe";
+            blockType = "Diamond Axe";
             classType = this;
-            image = "";
+            image = "img/images/crafted/tools/diamond/diamond_axe.png";
         }
 
         public override void Place()

@@ -16,7 +16,7 @@ namespace invento_web_app
             items.Add(new Sand(10));
             items.Add(new Apple(10));
             items.Add(new Pumpkin(10));
-            items.Add(new Melon(10));
+            items.Add(new MelonSlice(10));
             items.Add(new Carrot(10));
             items.Add(new Wheat(10));
             items.Add(new Leather(10));
