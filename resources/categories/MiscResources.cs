@@ -3,15 +3,15 @@ using System;
 namespace invento_web_app
 {
     //Leather inherit from Misc
-    class Leather: Misc
+    class LeatherResource: Misc
     {
-        public Leather(): base()
+        public LeatherResource(): base()
         {
             miscBlockType = "Leather";
             classType = this;
             image = "img/images/misc/leather.png";
         }
-        public Leather(int newCount): base(newCount)
+        public LeatherResource(int newCount): base(newCount)
         {
             miscBlockType = "Leather";
             image = "img/images/misc/leather.png"; 
@@ -24,15 +24,15 @@ namespace invento_web_app
     }
 
     //Flint inherit from Misc
-    class Flint: Misc
+    class FlintResource: Misc
     {
-        public Flint(): base()
+        public FlintResource(): base()
         {
             miscBlockType = "Flint";
             classType = this;
             image = "img/images/misc/flint.png";
         }
-        public Flint(int newCount): base(newCount)
+        public FlintResource(int newCount): base(newCount)
         {
             miscBlockType = "Flint";
             image = "img/images/misc/flint.png"; 
@@ -49,15 +49,15 @@ namespace invento_web_app
     }
 
     //String inherit from Misc
-    class String: Misc
+    class StringResource: Misc
     {
-        public String(): base()
+        public StringResource(): base()
         {
             miscBlockType = "String";
             classType = this;
             image = "img/images/misc/string.png";
         }
-        public String(int newCount): base(newCount)
+        public StringResource(int newCount): base(newCount)
         {
             miscBlockType = "String";
             image = "img/images/misc/string.png";
@@ -70,15 +70,15 @@ namespace invento_web_app
     }
 
     //Feather inherit from Misc
-    class Feather: Misc
+    class FeatherResource: Misc
     {
-        public Feather(): base()
+        public FeatherResource(): base()
         {
             miscBlockType = "Feather";
             classType = this;
             image = "img/images/misc/feather.png";
         }
-        public Feather(int newCount): base(newCount)
+        public FeatherResource(int newCount): base(newCount)
         {
             miscBlockType = "Feather";
             image = "img/images/misc/feather.png";
@@ -91,15 +91,15 @@ namespace invento_web_app
     }
 
     //Bones inherit from Misc
-    class Bones: Misc
+    class BonesResource: Misc
     {
-        public Bones(): base()
+        public BonesResource(): base()
         {
             miscBlockType = "Bones";
             classType = this;
             image = "img/images/misc/bones.png";
         }
-        public Bones(int newCount): base(newCount)
+        public BonesResource(int newCount): base(newCount)
         {
             miscBlockType = "Bones";
             image = "img/images/misc/bones.png";

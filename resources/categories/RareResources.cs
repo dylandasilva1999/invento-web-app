@@ -3,15 +3,15 @@ using System;
 namespace invento_web_app
 {
     //DiamondIgnot inherit from Rare
-    class DiamondIgnot: Rare
+    class DiamondIgnotResource: Rare
     {
-        public DiamondIgnot(): base()
+        public DiamondIgnotResource(): base()
         {
             rareBlockType = "Diamond Ignot";
             classType = this;
             image = "img/images/rare/diamond.png";
         }
-        public DiamondIgnot(int newCount): base(newCount)
+        public DiamondIgnotResource(int newCount): base(newCount)
         {
             rareBlockType = "Diamond Ignot";
             image = "img/images/rare/diamond.png";
@@ -28,15 +28,15 @@ namespace invento_web_app
     }
 
     //GoldIgnot inherit from Rare
-    class GoldIgnot: Rare
+    class GoldIgnotResource: Rare
     {
-        public GoldIgnot(): base()
+        public GoldIgnotResource(): base()
         {
             rareBlockType = "Gold Ignot";
             classType = this;
             image = "img/images/rare/gold.png";
         }
-        public GoldIgnot(int newCount): base(newCount)
+        public GoldIgnotResource(int newCount): base(newCount)
         {
             rareBlockType = "Gold Ignot";
             image = "img/images/rare/gold.png";
@@ -53,15 +53,15 @@ namespace invento_web_app
     }
 
     //IronIgnot inherit from Rare
-    class IronIgnot: Rare
+    class IronIgnotResource: Rare
     {
-        public IronIgnot(): base()
+        public IronIgnotResource(): base()
         {
             rareBlockType = "Iron Ignot";
             classType = this;
             image = "img/images/rare/iron.png";
         }
-        public IronIgnot(int newCount): base(newCount)
+        public IronIgnotResource(int newCount): base(newCount)
         {
             rareBlockType = "Iron Ignot";
             image = "img/images/rare/iron.png"; 
@@ -78,15 +78,15 @@ namespace invento_web_app
     }
 
     //Coal inherit from Rare
-    class Coal: Rare
+    class CoalResource: Rare
     {
-        public Coal(): base()
+        public CoalResource(): base()
         {
             rareBlockType = "Coal";
             classType = this;
             image = "img/images/rare/coal.png";
         }
-        public Coal(int newCount): base(newCount)
+        public CoalResource(int newCount): base(newCount)
         {
             rareBlockType = "Coal";
             image = "img/images/rare/coal.png"; 
@@ -107,15 +107,15 @@ namespace invento_web_app
     }
 
     //RedstoneDust inherit from Rare
-    class RedstoneDust: Rare
+    class RedstoneDustResource: Rare
     {
-        public RedstoneDust(): base()
+        public RedstoneDustResource(): base()
         {
             rareBlockType = "Redstone Dust";
             classType = this;
             image = "img/images/rare/redstone.png";
         }
-        public RedstoneDust(int newCount): base(newCount)
+        public RedstoneDustResource(int newCount): base(newCount)
         {
             rareBlockType = "Redstone Dust";
             image = "img/images/rare/redstone.png";

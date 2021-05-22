@@ -50,16 +50,16 @@ namespace invento_web_app
             miscResourcesNode.RemoveAllChildren();
 
             //Basic Resources Array
-            Basic[] basicResourcesArray = {new Wood(1), new Cobblestone(1), new Wool(1), new Sand(1), new WoodPlank(1)};
+            Basic[] basicResourcesArray = {new WoodResource(1), new CobblestoneResource(1), new WoolResource(1), new SandResource(1), new WoodPlankResource(1)};
 
             //Rare Resources Array
-            Rare[] rareResourcesArray = {new DiamondIgnot(1), new GoldIgnot(1), new IronIgnot(1), new Coal(1), new RedstoneDust(1)};
+            Rare[] rareResourcesArray = {new DiamondIgnotResource(1), new GoldIgnotResource(1), new IronIgnotResource(1), new CoalResource(1), new RedstoneDustResource(1)};
 
             //Food Resources Array
-            Food[] foodResourcesArray = {new Wheat(1), new MelonSlice(1), new Pumpkin(1), new Apple(1), new Carrot(1)};
+            Food[] foodResourcesArray = {new WheatResource(1), new MelonSliceResource(1), new PumpkinResource(1), new AppleResource(1), new CarrotResource(1)};
 
             //Misc Resources Array
-            Misc[] miscResourcesArray = {new Leather(1), new Flint(1), new String(1), new Feather(1), new Bones(1)};
+            Misc[] miscResourcesArray = {new LeatherResource(1), new FlintResource(1), new StringResource(1), new FeatherResource(1), new BonesResource(1)};
 
             foreach (Basic currentBasicResource in basicResourcesArray)
             {

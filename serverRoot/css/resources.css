@@ -208,9 +208,9 @@ Basic Resources Styling
 }
 
 .resource-image {
-  width: 55%;
-  height: 55%;
-  margin-top: 12%;
+  width: 50%;
+  height: 50%;
+  margin-top: 14%;
   transition: all ease 300ms;
 }
 

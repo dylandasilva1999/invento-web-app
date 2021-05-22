@@ -9,7 +9,7 @@ namespace invento_web_app
         public Inventory()
         {
             // WOOD ITEMS
-            items.Add(new WoodHoe(1));
+            items.Add(new WoodHoe(10));
             items.Add(new WoodAxe(1));
             items.Add(new WoodPickAxe(1));
             items.Add(new WoodShovel(1));
@@ -42,6 +42,34 @@ namespace invento_web_app
             items.Add(new DiamondAxe(1));
             items.Add(new DiamondShovel(1));
             items.Add(new DiamondSword(1));
+
+            //BASIC ESSENTIAL RESOURCES
+            items.Add(new Cobblestone(1));
+            items.Add(new Sand(1));
+            items.Add(new WoodLog(1));
+            items.Add(new WoodPlank(1));
+            items.Add(new Wool(1));
+
+            //FOOD ESSENTIAL RESOURCES
+            items.Add(new Apple(1));
+            items.Add(new Carrot(1));
+            items.Add(new MelonSlice(1));
+            items.Add(new Pumpkin(1));
+            items.Add(new Wheat(1));
+
+            //MISC ESSENTIAL RESOURCES
+            items.Add(new Bone(1));
+            items.Add(new Feather(1));
+            items.Add(new Flint(1));
+            items.Add(new Leather(1));
+            items.Add(new String(1));
+
+            //RARE ESSENTIAL RESOURCES
+            items.Add(new Coal(1));
+            items.Add(new DiamondIgnot(1));
+            items.Add(new GoldIgnot(1));
+            items.Add(new IronIgnot(1));
+            items.Add(new RedstoneDust(1));
 
             //ITEMS
             items.Add(new Arrow(10));
@@ -76,6 +104,17 @@ namespace invento_web_app
             {
                 return items;
             }
+        }
+
+        public static Item GetClass(string index)
+        {
+            foreach(Item curItem in items)
+            {
+                if(curItem.BlockType == index)
+                    return curItem;
+            }
+
+            return null;
         }
 
         public static int GetCount(string index)

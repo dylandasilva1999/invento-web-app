@@ -3,15 +3,15 @@ using System;
 namespace invento_web_app
 {
     //Wood inherit from Basic
-    class Wood: Basic, Flammable
+    class WoodResource: Basic, Flammable
     {
-        public Wood(): base()
+        public WoodResource(): base()
         {
             basicBlockType = "Wood Block";
             classType = this;
             image = "img/images/basic/log.png";
         }
-        public Wood(int newCount): base(newCount)
+        public WoodResource(int newCount): base(newCount)
         {
             basicBlockType = "Wood Block";
             image = "img/images/basic/log.png";
@@ -30,15 +30,15 @@ namespace invento_web_app
     }
 
     //Cobblestone inherit from Basic
-    class Cobblestone: Basic
+    class CobblestoneResource: Basic
     {
-        public Cobblestone(): base()
+        public CobblestoneResource(): base()
         {
             basicBlockType = "Cobblestone Block";
             classType = this;
             image = "img/images/basic/cobblestone.png";
         }
-        public Cobblestone(int newCount): base(newCount)
+        public CobblestoneResource(int newCount): base(newCount)
         {
             basicBlockType = "Cobblestone Block";
             image = "img/images/basic/cobblestone.png";
@@ -55,15 +55,15 @@ namespace invento_web_app
     }
 
     //Wool inherit from Basic
-    class Wool: Basic, Flammable
+    class WoolResource: Basic, Flammable
     {
-        public Wool(): base()
+        public WoolResource(): base()
         {
             basicBlockType = "Wool Block";
             classType = this;
             image = "img/images/basic/wool.png";
         }
-        public Wool(int newCount): base(newCount)
+        public WoolResource(int newCount): base(newCount)
         {
             basicBlockType = "Wool Block";
             image = "img/images/basic/wool.png";
@@ -81,15 +81,15 @@ namespace invento_web_app
     }
 
     //Sand inherit from Basic
-    class Sand: Basic
+    class SandResource: Basic
     {
-        public Sand(): base()
+        public SandResource(): base()
         {
             basicBlockType = "Sand Block";
             classType = this;
             image = "img/images/basic/sand.png";
         }
-        public Sand(int newCount): base(newCount)
+        public SandResource(int newCount): base(newCount)
         {
             basicBlockType = "Sand Block";
             image = "img/images/basic/sand.png";
@@ -107,15 +107,15 @@ namespace invento_web_app
     }
 
     //WoodPlanks inherit from Basic
-    class WoodPlank: Basic, Flammable
+    class WoodPlankResource: Basic, Flammable
     {
-        public WoodPlank(): base()
+        public WoodPlankResource(): base()
         {
             basicBlockType = "Wood Planks";
             classType = this;
             image = "img/images/basic/plank.png";
         }
-        public WoodPlank(int newCount): base(newCount)
+        public WoodPlankResource(int newCount): base(newCount)
         {
             basicBlockType = "Wood Planks";
             image = "img/images/basic/plank.png";

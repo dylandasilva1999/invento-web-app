@@ -167,7 +167,7 @@ Header Styling
 .header {
     width: 85%;
     height: 80vh;
-    margin-top: 3vh;
+    margin-top: 2vh;
 }
 
 #inventory-heading {
@@ -177,11 +177,18 @@ Header Styling
   margin: 2%;
 }
 
+.total {
+  font-size: 20px;
+  font-family: 'Kollektif';
+  color: #ffffff;
+  margin-left: 2%;
+}
+
 .inventory-item {
   width: 12%;
   background-color: #ffffff;
   margin: 2%;
-  height: 20vh;
+  height: 28vh;
   border-radius: 15px;
   text-align: center;
   font-family: 'Kollektif';
@@ -189,9 +196,9 @@ Header Styling
 }
 
 .item-image {
-  width: 50%;
-  height: 50%;
-  margin-top: 12%;
+  width: 55%;
+  height: 40%;
+  margin-top: 14%;
   transition: all ease 300ms;
   animation: headShake;
 }
@@ -217,7 +224,7 @@ Header Styling
 .inventory-wrapper.active {
   cursor: grabbing;
   cursor: -webkit-grabbing;
-  transform: scale(1.02);
+  transform: scale(1.0);
 }
 
 #inventory-item-heading {
@@ -227,7 +234,7 @@ Header Styling
 }
 
 .inventory-wrapper::-webkit-scrollbar {
-  display: none;
+  display: block;
 }
 
 #inv-item-name {
@@ -299,10 +306,31 @@ Header Styling
   margin-right: auto;
 }
 
-
-
-
-
-
-
-
+span {cursor:pointer; }
+		.number{
+			margin-top:10%;
+		}
+		.minus, .plus{
+			width:30px;
+			height:30px;
+			background:#1c2a39;
+      color: #ffffff;
+			border-radius:50%;
+			padding:2px 5px 8px 5px;
+			border:1px solid #ddd;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+		}
+		input{
+			height:34px;
+      width: 80px;
+      text-align: center;
+      background-color: #4CBEA0;
+      color: #ffffff;
+      font-size: 26px;
+			border:1px solid #ddd;
+			border-radius:50px;
+      display: inline-block;
+      vertical-align: middle;
+    }

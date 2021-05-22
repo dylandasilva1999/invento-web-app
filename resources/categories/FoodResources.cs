@@ -3,15 +3,15 @@ using System;
 namespace invento_web_app
 {
     //Wheat inherit from Food
-    class Wheat: Food
+    class WheatResource: Food
     {
-        public Wheat(): base()
+        public WheatResource(): base()
         {
             foodBlockType = "Wheat";
             classType = this;
             image = "img/images/food/wheat.png";
         }
-        public Wheat(int newCount): base(newCount)
+        public WheatResource(int newCount): base(newCount)
         {
             foodBlockType = "Wheat";
             image = "img/images/food/wheat.png";
@@ -24,15 +24,15 @@ namespace invento_web_app
     }
 
     //GoldIgnot inherit from Food
-    class MelonSlice: Food
+    class MelonSliceResource: Food
     {
-        public MelonSlice(): base()
+        public MelonSliceResource(): base()
         {
             foodBlockType = "Melon Slice";
             classType = this;
             image = "img/images/food/melon_slice.png";
         }
-        public MelonSlice(int newCount): base(newCount)
+        public MelonSliceResource(int newCount): base(newCount)
         {
             foodBlockType = "Melon Slice";
             image = "img/images/food/melon_slice.png";
@@ -45,15 +45,15 @@ namespace invento_web_app
     }
 
     //IronIgnot inherit from Food
-    class Pumpkin: Food
+    class PumpkinResource: Food
     {
-        public Pumpkin(): base()
+        public PumpkinResource(): base()
         {
             foodBlockType = "Pumpkin";
             classType = this;
             image = "img/images/food/pumpkin.png";
         }
-        public Pumpkin(int newCount): base(newCount)
+        public PumpkinResource(int newCount): base(newCount)
         {
             foodBlockType = "Pumpkin";
             image = "img/images/food/pumpkin.png"; 
@@ -66,15 +66,15 @@ namespace invento_web_app
     }
 
     //Coal inherit from Food
-    class Apple: Food
+    class AppleResource: Food
     {
-        public Apple(): base()
+        public AppleResource(): base()
         {
             foodBlockType = "Apple";
             classType = this;
             image = "img/images/food/apple.png";
         }
-        public Apple(int newCount): base(newCount)
+        public AppleResource(int newCount): base(newCount)
         {
             foodBlockType = "Apple";
             image = "img/images/food/apple.png";
@@ -87,15 +87,15 @@ namespace invento_web_app
     }
 
     //RedstoneDust inherit from Food
-    class Carrot: Food
+    class CarrotResource: Food
     {
-        public Carrot(): base()
+        public CarrotResource(): base()
         {
             foodBlockType = "Carrot";
             image = "img/images/food/carrot.png";
             classType = this;
         }
-        public Carrot(int newCount): base(newCount)
+        public CarrotResource(int newCount): base(newCount)
         {
             foodBlockType = "Carrot";
             image = "img/images/food/carrot.png";
