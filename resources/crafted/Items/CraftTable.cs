@@ -10,7 +10,7 @@ namespace invento_web_app
         {
             blockType = "Crafting Table";
             classType = this;
-            image = "img/images/crafted/items/craft_table.png";
+            image = "img/images/crafted/items/crafting_table.png";
         }
 
         public override void Place()

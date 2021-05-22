@@ -10,7 +10,7 @@ namespace invento_web_app
         {
             blockType = "Wood Hoe";
             classType = this;
-            image = "img/images/crafted/tools/diamond/wood_hoe.png";
+            image = "img/images/crafted/tools/wood/wood_hoe.png";
         }
 
         public override void Place()

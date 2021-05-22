@@ -10,7 +10,7 @@ namespace invento_web_app
         {
             blockType = "Gold Shovel";
             classType = this;
-            image = "img/images/crafted/tools/diamond/gold_shovel.png";
+            image = "img/images/crafted/tools/gold/gold_shovel.png";
         }
 
         public override void Place()

@@ -50,7 +50,7 @@ namespace invento_web_app
             //SHOW INVENTORY ITEMS TO FRONTEND
             foreach (Item item in inventory.Items)
             {
-                HtmlNode newInventoryNode = HtmlNode.CreateNode("<div class='inventory-item'><h1 id='inv-item-name'>" + item.BlockType + "</h1></div>");
+                HtmlNode newInventoryNode = HtmlNode.CreateNode("<div class='inventory-item'><img class='item-image' src='" + item.Image + "'><h1 id='inv-item-name'>" + item.BlockType + "</h1></div>");
                 inventoryNode.AppendChild(newInventoryNode);
             }
 
