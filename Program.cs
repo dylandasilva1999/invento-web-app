@@ -126,6 +126,8 @@ namespace invento_web_app
             listener.Prefixes.Add(url);
             listener.Start();
 
+            Console.WriteLine("Server Version: " + Database.GetVersion());
+
             Console.WriteLine("Listening for connection on " + url);
 
             Task listenTask = HandleIncomingConnections();

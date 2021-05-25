@@ -8,94 +8,242 @@ namespace invento_web_app
         private static ArrayList items = new ArrayList();
         public Inventory()
         {
-            // WOOD ITEMS
-            items.Add(new WoodHoe(10));
-            items.Add(new WoodAxe(1));
-            items.Add(new WoodPickAxe(1));
-            items.Add(new WoodShovel(1));
-            items.Add(new WoodSword(1));
+            ArrayList data = Database.ReadItems();
 
-            // STONE ITEMS
-            items.Add(new StoneHoe(1));
-            items.Add(new StonePickAxe(1));
-            items.Add(new StoneAxe(1));
-            items.Add(new StoneShovel(1));
-            items.Add(new StoneSword(1));
-            
-            // IRON ITEMS
-            items.Add(new IronHoe(1));
-            items.Add(new IronPickAxe(1));
-            items.Add(new IronAxe(1));
-            items.Add(new IronShovel(1));
-            items.Add(new IronSword(1));
+            foreach(Tuple<string, int, string>curTuple in data)
+            {
+                Item newItem;
 
-            // GOLD ITEMS
-            items.Add(new GoldHoe(1));
-            items.Add(new GoldPickAxe(1));
-            items.Add(new GoldAxe(1));
-            items.Add(new GoldShovel(1));
-            items.Add(new GoldSword(1));
+                switch (curTuple.Item1)
+                {
+                    //WOOD ITEMS
+                    case "Wood Hoe":
+                        newItem = new WoodHoe(curTuple.Item2);
+                        break;
+                    case "Wood Axe":
+                        newItem = new WoodAxe(curTuple.Item2);
+                        break;
+                    case "Wood Pick Axe":
+                        newItem = new WoodPickAxe(curTuple.Item2);
+                        break;
+                    case "Wood Shovel":
+                        newItem = new WoodShovel(curTuple.Item2);
+                        break;
+                    case "Wood Sword":
+                        newItem = new WoodSword(curTuple.Item2);
+                        break;
 
-            // DIAMOND ITEMS
-            items.Add(new DiamondHoe(1));
-            items.Add(new DiamondPickAxe(1));
-            items.Add(new DiamondAxe(1));
-            items.Add(new DiamondShovel(1));
-            items.Add(new DiamondSword(1));
+                    //STONE ITEMS
+                    case "Stone Hoe":
+                        newItem = new StoneHoe(curTuple.Item2);
+                        break;
+                    case "Stone Axe":
+                        newItem = new StoneAxe(curTuple.Item2);
+                        break;
+                    case "Stone Pick Axe":
+                        newItem = new StonePickAxe(curTuple.Item2);
+                        break;
+                    case "Stone Shovel":
+                        newItem = new StoneShovel(curTuple.Item2);
+                        break;
+                    case "Stone Sword":
+                        newItem = new StoneSword(curTuple.Item2);
+                        break;
 
-            //BASIC ESSENTIAL RESOURCES
-            items.Add(new Cobblestone(1));
-            items.Add(new Sand(1));
-            items.Add(new WoodLog(1));
-            items.Add(new WoodPlank(1));
-            items.Add(new Wool(1));
+                    //IRON ITEMS
+                    case "Iron Hoe":
+                        newItem = new IronHoe(curTuple.Item2);
+                        break;
+                    case "Iron Axe":
+                        newItem = new IronAxe(curTuple.Item2);
+                        break;
+                    case "Iron Pick Axe":
+                        newItem = new IronPickAxe(curTuple.Item2);
+                        break;
+                    case "Iron Shovel":
+                        newItem = new IronShovel(curTuple.Item2);
+                        break;
+                    case "Iron Sword":
+                        newItem = new IronSword(curTuple.Item2);
+                        break;
 
-            //FOOD ESSENTIAL RESOURCES
-            items.Add(new Apple(1));
-            items.Add(new Carrot(1));
-            items.Add(new MelonSlice(1));
-            items.Add(new Pumpkin(1));
-            items.Add(new Wheat(1));
+                    //GOLD ITEMS
+                    case "Gold Hoe":
+                        newItem = new GoldHoe(curTuple.Item2);
+                        break;
+                    case "Gold Axe":
+                        newItem = new GoldAxe(curTuple.Item2);
+                        break;
+                    case "Gold Pick Axe":
+                        newItem = new GoldPickAxe(curTuple.Item2);
+                        break;
+                    case "Gold Shovel":
+                        newItem = new GoldShovel(curTuple.Item2);
+                        break;
+                    case "Gold Sword":
+                        newItem = new GoldSword(curTuple.Item2);
+                        break;
 
-            //MISC ESSENTIAL RESOURCES
-            items.Add(new Bone(1));
-            items.Add(new Feather(1));
-            items.Add(new Flint(1));
-            items.Add(new Leather(1));
-            items.Add(new String(1));
+                    //DIAMOND ITEMS
+                    case "Diamond Hoe":
+                        newItem = new DiamondHoe(curTuple.Item2);
+                        break;
+                    case "Diamond Axe":
+                        newItem = new DiamondAxe(curTuple.Item2);
+                        break;
+                    case "Diamond Pick Axe":
+                        newItem = new DiamondPickAxe(curTuple.Item2);
+                        break;
+                    case "Diamond Shovel":
+                        newItem = new DiamondShovel(curTuple.Item2);
+                        break;
+                    case "Diamond Sword":
+                        newItem = new DiamondSword(curTuple.Item2);
+                        break;
 
-            //RARE ESSENTIAL RESOURCES
-            items.Add(new Coal(1));
-            items.Add(new DiamondIgnot(1));
-            items.Add(new GoldIgnot(1));
-            items.Add(new IronIgnot(1));
-            items.Add(new RedstoneDust(1));
+                    //BASIC ESSENTIAL RESOURCES
+                    case "Cobblestone":
+                        newItem = new Cobblestone(curTuple.Item2);
+                        break;
+                    case "Sand":
+                        newItem = new Sand(curTuple.Item2);
+                        break;
+                    case "Wood Log":
+                        newItem = new WoodLog(curTuple.Item2);
+                        break;
+                    case "Wood Plank":
+                        newItem = new WoodPlank(curTuple.Item2);
+                        break;
+                    case "Wool":
+                        newItem = new Wool(curTuple.Item2);
+                        break;
 
-            //ITEMS
-            items.Add(new Arrow(10));
-            items.Add(new Bed(10));
-            items.Add(new BoneMeal(10));
-            items.Add(new Bow(10));
-            items.Add(new Bread(10));
-            items.Add(new Chest(10));
-            items.Add(new Compass(10));
-            items.Add(new CraftTable(10));
-            items.Add(new Door(10));
-            items.Add(new FishingRod(10));
-            items.Add(new FletchingTable(10));
-            items.Add(new FlintSteel(10));
-            items.Add(new FurnaceItem(10));
-            items.Add(new GlassBlock(10));
-            items.Add(new GoldenApple(10));
-            items.Add(new HayBale(10));
-            items.Add(new ItemFrame(10));
-            items.Add(new Ladder(10));
-            items.Add(new Melon(10));
-            items.Add(new Painting(10));
-            items.Add(new Piston(10));
-            items.Add(new RedstoneTorch(10));
-            items.Add(new Stick(10));
-            items.Add(new Torch(10));
+                    //FOOD ESSENTIAL RESOURCES
+                    case "Apple":
+                        newItem = new Apple(curTuple.Item2);
+                        break;
+                    case "Carrot":
+                        newItem = new Carrot(curTuple.Item2);
+                        break;
+                    case "Melon Slice":
+                        newItem = new MelonSlice(curTuple.Item2);
+                        break;
+                    case "Pumpkin":
+                        newItem = new Pumpkin(curTuple.Item2);
+                        break;
+                    case "Wheat":
+                        newItem = new Wheat(curTuple.Item2);
+                        break;
+
+                    //MISC ESSENTIAL RESOURCES
+                    case "Bone":
+                        newItem = new Bone(curTuple.Item2);
+                        break;
+                    case "Feather":
+                        newItem = new Feather(curTuple.Item2);
+                        break;
+                    case "Flint":
+                        newItem = new Flint(curTuple.Item2);
+                        break;
+                    case "Leather":
+                        newItem = new Leather(curTuple.Item2);
+                        break;
+                    case "String":
+                        newItem = new String(curTuple.Item2);
+                        break;
+
+                    //RARE ESSENTIAL RESOURCES
+                    case "Coal":
+                        newItem = new Coal(curTuple.Item2);
+                        break;
+                    case "DiamondIgnot":
+                        newItem = new DiamondIgnot(curTuple.Item2);
+                        break;
+                    case "GoldIgnot":
+                        newItem = new GoldIgnot(curTuple.Item2);
+                        break;
+                    case "IronIgnot":
+                        newItem = new IronIgnot(curTuple.Item2);
+                        break;
+                    case "RedstoneDust":
+                        newItem = new RedstoneDust(curTuple.Item2);
+                        break;
+
+                    //ITEMS
+                    case "Arrow":
+                        newItem = new Arrow(curTuple.Item2);
+                        break;
+                    case "Bed":
+                        newItem = new Bed(curTuple.Item2);
+                        break;
+                    case "BoneMeal":
+                        newItem = new BoneMeal(curTuple.Item2);
+                        break;
+                    case "Bow":
+                        newItem = new Bow(curTuple.Item2);
+                        break;
+                    case "Bread":
+                        newItem = new Bread(curTuple.Item2);
+                        break;
+                    case "Chest":
+                        newItem = new Chest(curTuple.Item2);
+                        break;
+                    case "Compass":
+                        newItem = new Compass(curTuple.Item2);
+                        break;
+                    case "CraftTable":
+                        newItem = new CraftTable(curTuple.Item2);
+                        break;
+                    case "Door":
+                        newItem = new Door(curTuple.Item2);
+                        break;
+                    case "FishingRod":
+                        newItem = new FishingRod(curTuple.Item2);
+                        break;
+                    case "FletchingTable":
+                        newItem = new FletchingTable(curTuple.Item2);
+                        break;
+                    case "FlintSteel":
+                        newItem = new FlintSteel(curTuple.Item2);
+                        break;
+                    case "FurnaceItem":
+                        newItem = new FurnaceItem(curTuple.Item2);
+                        break;
+                    case "GlassBlock":
+                        newItem = new GlassBlock(curTuple.Item2);
+                        break;
+                    case "GoldenApple":
+                        newItem = new GoldenApple(curTuple.Item2);
+                        break;
+                    case "HayBale":
+                        newItem = new HayBale(curTuple.Item2);
+                        break;
+                    case "ItemFrame":
+                        newItem = new ItemFrame(curTuple.Item2);
+                        break;
+                    case "Ladder":
+                        newItem = new Ladder(curTuple.Item2);
+                        break;
+                    case "Melon":
+                        newItem = new Melon(curTuple.Item2);
+                        break;
+                    case "Painting":
+                        newItem = new Painting(curTuple.Item2);
+                        break;
+                    case "Piston":
+                        newItem = new Piston(curTuple.Item2);
+                        break;
+                    case "RedstoneTorch":
+                        newItem = new RedstoneTorch(curTuple.Item2);
+                        break;
+                    case "Stick":
+                        newItem = new Stick(curTuple.Item2);
+                        break;
+                    case "Torch":
+                        newItem = new Torch(curTuple.Item2);
+                        break;                                                  
+                }
+            }
         }
 
         public ArrayList Items
