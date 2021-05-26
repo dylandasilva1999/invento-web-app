@@ -8,7 +8,19 @@ namespace invento_web_app
         private static ArrayList recipes = new ArrayList();
         public static void Populate()
         {
-            // ! WOOD TOOLS RECIPES
+            ArrayList records = Database.ReadRecipes();
+
+            foreach (Tuple<string, string[,]> curTuple in records)
+            {
+                 Recipe curRecipe = new Recipe((Craft) Inventory.GetClass(curTuple.Item1), new Item[3,3]
+                     {{Inventory.GetClass(curTuple.Item2[0,0]),Inventory.GetClass(curTuple.Item2[0,1]),Inventory.GetClass(curTuple.Item2[0,2])},
+                     {Inventory.GetClass(curTuple.Item2[1,0]),Inventory.GetClass(curTuple.Item2[1,1]),Inventory.GetClass(curTuple.Item2[1,2])},
+                     {Inventory.GetClass(curTuple.Item2[2,0]),Inventory.GetClass(curTuple.Item2[2,1]),Inventory.GetClass(curTuple.Item2[2,2])}});
+
+                 recipes.Add(curRecipe);
+            }
+
+            /* // ! WOOD TOOLS RECIPES
             // WOOD AXE RECIPE
             Recipe woodAxeRecipe = new Recipe((Craft) WoodAxe.Get(), new Item[3,3] {{WoodPlank.Get(), WoodPlank.Get(), null}, 
                                                                 {WoodPlank.Get(), Stick.Get(), null},
@@ -276,7 +288,7 @@ namespace invento_web_app
             recipes.Add(glassBlockRecipe);
             recipes.Add(goldenAppleRecipe);
             recipes.Add(hayBaleRecipe);
-            recipes.Add(itemFrameRecipe);
+            recipes.Add(itemFrameRecipe); */
 
         } 
 
@@ -285,6 +297,26 @@ namespace invento_web_app
             get
             {
                 return recipes;
+            }
+        }
+
+        public static void AddRecipe(Recipe recipe)
+        {
+            string blockType = recipe.Result.BlockType;
+
+            bool newRecipe = true;
+            foreach(Recipe curRecipe in recipes)
+            {
+                if(curRecipe.Result.BlockType == blockType)
+                {
+                    newRecipe = false;
+                }
+            }
+
+            if(newRecipe == true)
+            {
+                recipes.Add(recipe);
+                Database.AddRecipe(recipe);
             }
         }
     }

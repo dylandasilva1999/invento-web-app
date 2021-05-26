@@ -156,16 +156,16 @@ namespace invento_web_app
                     case "Coal":
                         newItem = new Coal(curTuple.Item2);
                         break;
-                    case "DiamondIgnot":
+                    case "Diamond Ignot":
                         newItem = new DiamondIgnot(curTuple.Item2);
                         break;
-                    case "GoldIgnot":
+                    case "Gold Ignot":
                         newItem = new GoldIgnot(curTuple.Item2);
                         break;
-                    case "IronIgnot":
+                    case "Iron Ignot":
                         newItem = new IronIgnot(curTuple.Item2);
                         break;
-                    case "RedstoneDust":
+                    case "Redstone Dust":
                         newItem = new RedstoneDust(curTuple.Item2);
                         break;
 
@@ -176,7 +176,7 @@ namespace invento_web_app
                     case "Bed":
                         newItem = new Bed(curTuple.Item2);
                         break;
-                    case "BoneMeal":
+                    case "Bone Meal":
                         newItem = new BoneMeal(curTuple.Item2);
                         break;
                     case "Bow":
@@ -191,34 +191,34 @@ namespace invento_web_app
                     case "Compass":
                         newItem = new Compass(curTuple.Item2);
                         break;
-                    case "CraftTable":
+                    case "Craft Table":
                         newItem = new CraftTable(curTuple.Item2);
                         break;
                     case "Door":
                         newItem = new Door(curTuple.Item2);
                         break;
-                    case "FishingRod":
+                    case "Fishing Rod":
                         newItem = new FishingRod(curTuple.Item2);
                         break;
-                    case "FletchingTable":
+                    case "Fletching Table":
                         newItem = new FletchingTable(curTuple.Item2);
                         break;
-                    case "FlintSteel":
+                    case "Flint and Steel":
                         newItem = new FlintSteel(curTuple.Item2);
                         break;
-                    case "FurnaceItem":
+                    case "Furnace Item":
                         newItem = new FurnaceItem(curTuple.Item2);
                         break;
-                    case "GlassBlock":
+                    case "Glass Block":
                         newItem = new GlassBlock(curTuple.Item2);
                         break;
-                    case "GoldenApple":
+                    case "Golden Apple":
                         newItem = new GoldenApple(curTuple.Item2);
                         break;
-                    case "HayBale":
+                    case "Hay Bale":
                         newItem = new HayBale(curTuple.Item2);
                         break;
-                    case "ItemFrame":
+                    case "Item Frame":
                         newItem = new ItemFrame(curTuple.Item2);
                         break;
                     case "Ladder":
@@ -241,8 +241,13 @@ namespace invento_web_app
                         break;
                     case "Torch":
                         newItem = new Torch(curTuple.Item2);
+                        break;
+                    default:
+                        newItem = null;
                         break;                                                  
                 }
+                
+                items.Add(newItem);
             }
         }
 

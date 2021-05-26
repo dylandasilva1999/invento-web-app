@@ -23,6 +23,7 @@ namespace invento_web_app
                     count = value;
                 }
                 
+                Database.UpdateBlockCount(blockType, count);
             }
         }
 

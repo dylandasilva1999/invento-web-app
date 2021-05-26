@@ -120,13 +120,30 @@ namespace invento_web_app
         static void Main(string[] args)
         {
             Inventory inventory = new Inventory();
-            ArrayList array = inventory.Items;
+
+            RecipeBook.Populate(); 
+
+            Recipe woodHoeRecipe = new Recipe((Craft) Inventory.GetClass("Wood Hoe"), new Item[3,3] 
+                {{Inventory.GetClass("Wood Plank"), Inventory.GetClass("Wood Plank"), null}, 
+                {null, Inventory.GetClass("Stick"), null},
+                {null, Inventory.GetClass("Stick"), null}});   
+
+            RecipeBook.AddRecipe(woodHoeRecipe);
+
+            foreach (Recipe curRecipe in RecipeBook.Recipes)
+            {
+                Console.WriteLine("Recipe is " + curRecipe.Result.BlockType);
+            }  
+
+            Console.WriteLine("Wood Plank count is: " + Inventory.GetClass("Wood Plank").Count);
+            Inventory.GetClass("Wood Plank").Count++;
+            Console.WriteLine("Wood Plank count is: " + Inventory.GetClass("Wood Plank").Count);
+
+            Console.WriteLine("Server Version: " + Database.GetVersion());  
 
             listener = new HttpListener();
             listener.Prefixes.Add(url);
-            listener.Start();
-
-            Console.WriteLine("Server Version: " + Database.GetVersion());
+            listener.Start();                                             
 
             Console.WriteLine("Listening for connection on " + url);
 

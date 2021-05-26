@@ -235,6 +235,7 @@ Header Styling
 
 .inventory-wrapper::-webkit-scrollbar {
   display: block;
+  -webkit-appearance: none;
 }
 
 #inv-item-name {

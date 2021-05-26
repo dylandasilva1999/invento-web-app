@@ -48,15 +48,17 @@ namespace invento_web_app
             Inventory inventory = new Inventory();
 
             //SHOW INVENTORY ITEMS TO FRONTEND
-            foreach (Item item in inventory.Items)
+            foreach (Item curItem in inventory.Items)
             {
-                HtmlNode newInventoryNode = HtmlNode.CreateNode("<div class='inventory-item'><img class='item-image' src='" + item.Image + "'><h1 id='inv-item-name'>" + item.BlockType + "</h1><div class='number'><span class='minus'>-</span><input type='text' value='" + item.Count + "'/><span class='plus'>+</span></div></div>");
+                HtmlNode newInventoryNode = HtmlNode.CreateNode("<div class='inventory-item'><img class='item-image' src='" 
+                + curItem.Image + "'><h1 id='inv-item-name'>" + curItem.BlockType + "</h1><div class='number'><span class='minus'>-</span><input type='text' value='" 
+                + curItem.Count + "'/><span class='plus'>+</span></div></div>");
                 inventoryNode.AppendChild(newInventoryNode);
             }
 
-            foreach (string currentRecipeString in newRecipe)
+            foreach (Recipe curRecipe in RecipeBook.Recipes)
             {
-                HtmlNode newRecipeNode = HtmlNode.CreateNode("<div class='recipe-item'><h1 id='recipe-name'>" + currentRecipeString + "</h1></div>");
+                HtmlNode newRecipeNode = HtmlNode.CreateNode("<div class='recipe-item'><h1 id='recipe-name'>" + curRecipe.Result.BlockType + "</h1></div>");
                 recipeNode.AppendChild(newRecipeNode);
             }
 
