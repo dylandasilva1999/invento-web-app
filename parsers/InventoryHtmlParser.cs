@@ -52,7 +52,7 @@ namespace invento_web_app
             {
                 HtmlNode newInventoryNode = HtmlNode.CreateNode("<div class='inventory-item'><img class='item-image' src='" 
                 + curItem.Image + "'><h1 id='inv-item-name'>" + curItem.BlockType + "</h1><div class='number'><span class='minus'>-</span><input type='text' value='" 
-                + curItem.Count + "'/><span class='plus'>+</span></div></div>");
+                + curItem.Count + "'/><span class='plus'>+</span></div</div><input class='update-btn' type='submit' value='Update'>");
                 inventoryNode.AppendChild(newInventoryNode);
             }
 
@@ -60,7 +60,7 @@ namespace invento_web_app
             {
                 HtmlNode newRecipeNode = HtmlNode.CreateNode("<div class='recipe-item'><img class='item-image' src='" 
                 + curRecipe.Result.Image + "'><h1 id='recipe-name'>" + curRecipe.Result.BlockType + "</h1><div class='number'><span class='minus'>-</span><input type='text' value='" 
-                + curRecipe.Result.Count + "'/><span class='plus'>+</span></div></div>");
+                + curRecipe.Result.Count + "'/><span class='plus'>+</span></div>");
                 recipeNode.AppendChild(newRecipeNode);
             }
 

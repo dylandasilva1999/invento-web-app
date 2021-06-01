@@ -29,7 +29,38 @@ namespace invento_web_app
                 Console.WriteLine(req.HttpMethod);
                 Console.WriteLine(req.UserHostName);
                 Console.WriteLine(req.UserAgent);
+				Console.WriteLine("Has entity body: " + req.HasEntityBody);
                 Console.WriteLine();
+
+				if(req.HasEntityBody) 
+				{
+					System.IO.Stream body = req.InputStream;
+					System.Text.Encoding encoding = req.ContentEncoding;
+					System.IO.StreamReader reader = new System.IO.StreamReader(body, encoding);
+
+					if(req.ContentType != null) 
+						Console.WriteLine("Client data content type: " + req.ContentType);
+					Console.WriteLine("Client data content length: " + req.ContentLength64);
+
+					Console.WriteLine("Start of data:");
+					string data = reader.ReadToEnd();
+					Console.WriteLine(data);
+					Console.WriteLine("End of data");
+					body.Close();
+					reader.Close();
+
+					string[] properties = data.Split('&');
+					foreach (string curProp in properties)
+					{
+						string[] pair = curProp.Split('=');
+						string key = pair[0].Replace('+', ' ');
+						if(Inventory.GetClass(key) != null)
+						{
+							int value = Int32.Parse(pair[1]);
+							Inventory.GetClass(key).Count = value;
+						}
+					}
+				}
 
                 string path = req.Url.AbsolutePath;
 
@@ -132,12 +163,12 @@ namespace invento_web_app
 
             foreach (Recipe curRecipe in RecipeBook.Recipes)
             {
-                Console.WriteLine("Recipe is " + curRecipe.Result.BlockType);
+                //Console.WriteLine("Recipe is " + curRecipe.Result.BlockType);
             }  
 
-            Console.WriteLine("Wood Plank count is: " + Inventory.GetClass("Wood Plank").Count);
-            Inventory.GetClass("Wood Plank").Count++;
-            Console.WriteLine("Wood Plank count is: " + Inventory.GetClass("Wood Plank").Count);
+            //Console.WriteLine("Wood Plank count is: " + Inventory.GetClass("Wood Plank").Count);
+           	//Inventory.GetClass("Wood Plank").Count++;
+            //Console.WriteLine("Wood Plank count is: " + Inventory.GetClass("Wood Plank").Count);
 
             Console.WriteLine("Server Version: " + Database.GetVersion());  
 

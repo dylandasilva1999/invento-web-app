@@ -60,17 +60,20 @@
         <!-- HEADER -->
         <div class="header container-fluid">
             <h1 id="inventory-heading">Inventory</h1>
-            <div class="inventory-wrapper" id="inventoryItems">
-                <div class="inventory-item">
-                    <img class="item-image" src="">
-                    <h1 id="inv-item-name"></h1>
-                    <div class="number">
-                        <span class="minus">-</span>
-                        <input type="text" value="1"/>
-                        <span class="plus">+</span>
-                    </div>
-                </div>
-            </div>
+				<div class="inventory-wrapper" id="inventoryItems">
+					<form action ="/inventory.html" method="POST">
+						<div class="inventory-item">
+							<img class="item-image" src="">
+							<h1 id="inv-item-name"></h1>
+								<div class="number">
+									<span class="minus">-</span>
+									<input type="text" value="1"/>
+									<span class="plus">+</span>
+								</div>
+						</div>
+						<input class="update-btn" type="submit" value="Update">
+					</form>
+				</div>
             <h1 id="recipes-heading">Recipes</h1>
             <div class="recipe-wrapper" id="recipeItems">
                 <div class="recipe-item">
@@ -82,7 +85,31 @@
                         <span class="plus">+</span>
                     </div>
                 </div>
-            </div>     
+            </div>
+			
+			<!-- FOOTER -->
+            <div class="footer">
+                <p id="all-rights-reserved">All rights reserved</p>
+                <ul class="footer-nav">
+                    <li class="footer-item">
+                        <a class="nav-link effect-underline" href="/index.html">HOME</a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="nav-link effect-underline" href="/inventory.html">INVENTORY</a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="nav-link effect-underline" href="/resources.html">RESOURCES</a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="nav-link effect-underline" href="/about-us.html">ABOUT</a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="nav-link effect-underline" href="/contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- END OF FOOTER -->
+
         </div>
         <!-- END OF HEADER -->
 

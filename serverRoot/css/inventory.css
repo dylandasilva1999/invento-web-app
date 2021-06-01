@@ -187,8 +187,8 @@ Header Styling
 .inventory-item {
   width: 12%;
   background-color: #ffffff;
-  margin: 1.4%;
-  height: 26vh;
+  margin: 2%;
+  height: 34vh;
   border-radius: 15px;
   text-align: center;
   font-family: 'Kollektif';
@@ -196,8 +196,8 @@ Header Styling
 }
 
 .item-image {
-  width: 48%;
-  height: 38%;
+  width: 55%;
+  height: 34%;
   margin-top: 14%;
   transition: all ease 300ms;
   animation: headShake;
@@ -330,9 +330,54 @@ span {cursor:pointer; }
       text-align: center;
       background-color: #4CBEA0;
       color: #ffffff;
-      font-size: 26px;
+      font-size: 22px;
 			border:1px solid #ddd;
 			border-radius:50px;
       display: inline-block;
       vertical-align: middle;
     }
+
+.update-btn {
+	background-color: #1c2a39;
+	font-family: 'Gidole-Regular';
+	font-size: 20px;
+	width: 70%;
+	margin-top: 12%;
+	transition: all ease 200ms;
+}
+
+.update-btn:hover {
+	transition: all ease 200ms;
+	background-color: transparent;
+	border: solid 1px #1c2a39;
+	color: #1c2a39;
+}
+
+/*
+Footer Styling
+*/
+
+.footer {
+  left: 0;
+  bottom: 0;
+  margin-top: 10vh;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding-bottom: 8vh;
+  border-top: solid 3px #ffffff;
+}
+
+#all-rights-reserved {
+  font-family: 'Gidole-Regular';
+  font-size: 20px;
+  float: left;
+  padding-top: 1%;
+}
+
+.footer-nav li{
+  display: inline-block;
+  padding-top: 1%;
+  font-family: 'Gidole-Regular';
+  float: right;
+}
