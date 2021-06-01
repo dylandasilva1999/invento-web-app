@@ -58,7 +58,9 @@ namespace invento_web_app
 
             foreach (Recipe curRecipe in RecipeBook.Recipes)
             {
-                HtmlNode newRecipeNode = HtmlNode.CreateNode("<div class='recipe-item'><h1 id='recipe-name'>" + curRecipe.Result.BlockType + "</h1></div>");
+                HtmlNode newRecipeNode = HtmlNode.CreateNode("<div class='recipe-item'><img class='item-image' src='" 
+                + curRecipe.Result.Image + "'><h1 id='recipe-name'>" + curRecipe.Result.BlockType + "</h1><div class='number'><span class='minus'>-</span><input type='text' value='" 
+                + curRecipe.Result.Count + "'/><span class='plus'>+</span></div></div>");
                 recipeNode.AppendChild(newRecipeNode);
             }
 

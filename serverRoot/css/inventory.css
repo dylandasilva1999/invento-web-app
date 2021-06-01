@@ -174,7 +174,7 @@ Header Styling
   font-size: 45px;
   font-family: 'Kollektif';
   color: #4CBEA0;
-  margin: 2%;
+  margin: 1.2%;
 }
 
 .total {
@@ -187,8 +187,8 @@ Header Styling
 .inventory-item {
   width: 12%;
   background-color: #ffffff;
-  margin: 2%;
-  height: 28vh;
+  margin: 1.4%;
+  height: 26vh;
   border-radius: 15px;
   text-align: center;
   font-family: 'Kollektif';
@@ -196,8 +196,8 @@ Header Styling
 }
 
 .item-image {
-  width: 55%;
-  height: 40%;
+  width: 48%;
+  height: 38%;
   margin-top: 14%;
   transition: all ease 300ms;
   animation: headShake;
@@ -262,8 +262,8 @@ Header Styling
 .recipe-item {
   width: 12%;
   background-color: #ffffff;
-  margin: 2%;
-  height: 20vh;
+  margin: 1.4%;
+  height: 26vh;
   border-radius: 15px;
   text-align: center;
   font-family: 'Kollektif';
@@ -286,7 +286,7 @@ Header Styling
 .recipe-wrapper.active {
   cursor: grabbing;
   cursor: -webkit-grabbing;
-  transform: scale(1.02);
+  transform: scale(1);
 }
 
 #recipe-item-heading {
@@ -296,13 +296,14 @@ Header Styling
 }
 
 .recipe-wrapper::-webkit-scrollbar {
-  display: none;
+	display: block;
+	-webkit-appearance: none;
 }
 
 #recipe-name {
   font-family: 'Gidole-Regular';
   font-size: 25px;
-  padding-top: 40%;
+  padding-top: 6%;
   margin-left: auto;
   margin-right: auto;
 }

@@ -8,7 +8,7 @@ namespace invento_web_app
 
         public HayBale(int newCount): base(newCount)
         {
-            blockType = "HayBale";
+            blockType = "Hay Bale";
             classType = this;
             image = "img/images/crafted/items/hay_bale.png";
         }
@@ -16,7 +16,7 @@ namespace invento_web_app
         public override void Place()
         {
             Count--;
-            Console.WriteLine("HayBale has been placed");
+            Console.WriteLine("Hay Bale has been placed");
         }
 
         public Recipe GetRecipe()
