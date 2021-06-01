@@ -191,7 +191,7 @@ namespace invento_web_app
                     case "Compass":
                         newItem = new Compass(curTuple.Item2);
                         break;
-                    case "Craft Table":
+                    case "Crafting Table":
                         newItem = new CraftTable(curTuple.Item2);
                         break;
                     case "Door":
@@ -206,7 +206,7 @@ namespace invento_web_app
                     case "Flint and Steel":
                         newItem = new FlintSteel(curTuple.Item2);
                         break;
-                    case "Furnace Item":
+                    case "Furnace":
                         newItem = new FurnaceItem(curTuple.Item2);
                         break;
                     case "Glass Block":
@@ -233,7 +233,7 @@ namespace invento_web_app
                     case "Piston":
                         newItem = new Piston(curTuple.Item2);
                         break;
-                    case "RedstoneTorch":
+                    case "Redstone Torch":
                         newItem = new RedstoneTorch(curTuple.Item2);
                         break;
                     case "Stick":

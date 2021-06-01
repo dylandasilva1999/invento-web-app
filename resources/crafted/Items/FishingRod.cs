@@ -8,7 +8,7 @@ namespace invento_web_app
 
         public FishingRod(int newCount): base(newCount)
         {
-            blockType = "FishingRod";
+            blockType = "Fishing Rod";
             classType = this;
             image = "img/images/crafted/items/fishing_rod.png";   
         }
