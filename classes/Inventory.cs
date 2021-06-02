@@ -251,7 +251,7 @@ namespace invento_web_app
             }
         }
 
-        public ArrayList Items
+        public static ArrayList Items
         {
             get 
             {

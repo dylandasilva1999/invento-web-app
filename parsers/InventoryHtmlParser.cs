@@ -44,14 +44,11 @@ namespace invento_web_app
             //REMOVE ALL CHILDREN FROM RECIPES LIST
             recipeNode.RemoveAllChildren();
 
-            // CREATE A NEW INSTANCE OF INVENTORY
-            Inventory inventory = new Inventory();
-
             //SHOW INVENTORY ITEMS TO FRONTEND
-            foreach (Item curItem in inventory.Items)
+            foreach (Item curItem in Inventory.Items)
             {
                 HtmlNode newInventoryNode = HtmlNode.CreateNode("<div class='inventory-item'><img class='item-image' src='" 
-                + curItem.Image + "'><h1 id='inv-item-name'>" + curItem.BlockType + "</h1><div class='number'><span class='minus'>-</span><input type='text' value='" 
+                + curItem.Image + "'><h1 id='inv-item-name'>" + curItem.BlockType + "</h1><div class='number'><span class='minus'>-</span><input type='text' name='" + curItem.BlockType + "' value='" 
                 + curItem.Count + "'/><span class='plus'>+</span></div</div><input class='update-btn' type='submit' value='Update'>");
                 inventoryNode.AppendChild(newInventoryNode);
             }
@@ -59,8 +56,8 @@ namespace invento_web_app
             foreach (Recipe curRecipe in RecipeBook.Recipes)
             {
                 HtmlNode newRecipeNode = HtmlNode.CreateNode("<div class='recipe-item'><img class='item-image' src='" 
-                + curRecipe.Result.Image + "'><h1 id='recipe-name'>" + curRecipe.Result.BlockType + "</h1><div class='number'><span class='minus'>-</span><input type='text' value='" 
-                + curRecipe.Result.Count + "'/><span class='plus'>+</span></div>");
+                + curRecipe.Result.Image + "'><h1 id='recipe-name'>" + curRecipe.Result.BlockType + "</h1><div class='number'><span class='minus'>-</span><input type='text' name='" + curRecipe.Result.BlockType + "' value='" 
+                + curRecipe.Result.Count + "'/><span class='plus'>+</span></div><input class='craft-btn' type='submit' value='Craft'>");
                 recipeNode.AppendChild(newRecipeNode);
             }
 
