@@ -48,5 +48,29 @@ namespace invento_web_app
                 Database.AddRecipe(recipe);
             }
         }
+
+		public static void ApplyRecipe(string blockType) 
+		{
+			Recipe selectedRecipe = null;
+			foreach (Recipe curRecipe in recipes)
+			{
+				if(curRecipe.Result.BlockType == blockType)
+				{
+					selectedRecipe = curRecipe;
+				}
+			}
+
+			if(selectedRecipe.IsViable())
+			{
+				selectedRecipe.Result.Count++;
+				foreach (Item curInput in selectedRecipe.Inputs)
+				{
+					if(curInput != null)
+					{
+						curInput.Count--;
+					}
+				}
+			}
+		}
     }
 }

@@ -54,7 +54,12 @@ namespace invento_web_app
 					{
 						string[] pair = curProp.Split('=');
 						string key = pair[0].Replace('+', ' ');
-						if(Inventory.GetClass(key) != null)
+
+						if(key == "recipe")
+						{
+							RecipeBook.ApplyRecipe(pair[1].Replace('+', ' '));
+						}
+						else if(Inventory.GetClass(key) != null)
 						{
 							int value = Int32.Parse(pair[1]);
 							Inventory.GetClass(key).Count = value;

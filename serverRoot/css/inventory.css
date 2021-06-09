@@ -204,9 +204,22 @@ Header Styling
   animation: headShake;
 }
 
+.item-recipe-image {
+	width: 50%;
+	height: 42%;
+	margin-top: 14%;
+	transition: all ease 300ms;
+	animation: headShake;
+  }
+
 .item-image:hover {
   transition: all ease 200ms;
   transform: rotate(10deg);
+}
+
+.item-recipe-image:hover {
+	transition: all ease 200ms;
+	transform: rotate(10deg);
 }
 
 .inventory-wrapper {
@@ -219,7 +232,6 @@ Header Styling
   transform: scale(1);
   will-change: transform;
   user-select: none;
-  cursor: pointer;
 }
 
 .inventory-wrapper.active {
@@ -262,14 +274,17 @@ Header Styling
 
 .inventory-form {
 	overflow-x: hidden;
-	float: left;
+}
+
+.recipe-form {
+	overflow-x: hidden;
 }
 
 .recipe-item {
   width: 12%;
   background-color: #ffffff;
   margin: 2%;
-  height: 34vh;
+  height: 26vh;
   border-radius: 15px;
   text-align: center;
   font-family: 'Kollektif';
@@ -286,7 +301,6 @@ Header Styling
   transform: scale(1);
   will-change: transform;
   user-select: none;
-  cursor: pointer;
 }
 
 .recipe-wrapper.active {
@@ -309,9 +323,23 @@ Header Styling
 #recipe-name {
   font-family: 'Gidole-Regular';
   font-size: 25px;
-  padding-top: 6%;
+  padding-top: 8%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.item-btn {
+	width: 80%;
+	font-size: 18px;
+	transition: all ease 200ms;
+	background-color: #1c2a39;
+}
+
+.item-btn:hover {
+	transition: all ease 200ms;
+	background-color: transparent;
+	border: solid 1px #1c2a39;
+	color: #1c2a39;
 }
 
 span {cursor:pointer; }

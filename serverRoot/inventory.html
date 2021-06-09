@@ -60,8 +60,8 @@
         <!-- HEADER -->
         <div class="header container-fluid">
             <h1 id="inventory-heading">Inventory</h1>
+			<form class="inventory-form" action ="/inventory.html" method="POST">
 				<div class="inventory-wrapper" id="inventoryItems">
-					<form class = "inventory-form" action ="/inventory.html" method="POST">
 						<div class="inventory-item">
 							<img class="item-image" src="">
 							<h1 id="inv-item-name"></h1>
@@ -72,23 +72,21 @@
 								</div>
 						</div>
 						<input class="update-btn" type="submit" value="Update">
-					</form>
 				</div>
+			</form>
             <h1 id="recipes-heading">Recipes</h1>
-            <div class="recipe-wrapper" id="recipeItems">
-				<form class = "recipes-form" action ="/inventory.html" method="POST">
-					<div class="recipe-item">
-						<img class="item-image" src="">
-						<h1 id="recipe-name"></h1>
-						<div class="number">
-							<span class="minus">-</span>
-							<input type="text" name="" value="1"/>
-							<span class="plus">+</span>
-						</div>
-					</div>
-					<input class="craft-btn" type="submit" value="Craft">
-				</form>	
-            </div>
+			<form class="recipes-form" action ="/inventory.html" id="recipeForm" method="POST">
+				<input id="inputRecipe" type="hidden" name="recipe" value="Wood Axe">
+            	<div class="recipe-wrapper" id="recipeItems">
+					<ul id="recipeList">
+						<li class="recipe-item">
+							<img class="item-recipe-image" src="">
+							<h1 id="recipe-name">Click to Craft</h1>
+							<input class="item-btn" type="submit" value="Wood Axe"/>
+						</li>
+					</ul>
+            	</div>
+			</form>	
 			
 			<!-- FOOTER -->
             <div class="footer">

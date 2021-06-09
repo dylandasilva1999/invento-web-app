@@ -28,3 +28,8 @@ slider.addEventListener('mousemove', (e) => {
   slider.scrollLeft = scrollLeft - walk;
   console.log(walk);
 });
+
+function changeSubmit(event) {
+	document.getElementById("inputRecipe").value = event.submitter.value;
+}
+document.getElementById("recipeForm").addEventListener('submit', changeSubmit);

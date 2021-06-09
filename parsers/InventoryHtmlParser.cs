@@ -35,7 +35,7 @@ namespace invento_web_app
             //GET INVENTORY LIST FROM FRONTEND
             HtmlNode inventoryNode = htmlDoc.GetElementbyId("inventoryItems");
             //GET RECIPES LIST FROM FRONTEND
-            HtmlNode recipeNode = htmlDoc.GetElementbyId("recipeItems");
+            HtmlNode recipeNode = htmlDoc.GetElementbyId("recipeList");
 
             string[] newRecipe = {"Pick Axe", "Torch", "Shovel", "Boat", "Diamond Pick Axe", "Iron Sword", "Repeater", "Stone"};
 
@@ -55,9 +55,7 @@ namespace invento_web_app
 
             foreach (Recipe curRecipe in RecipeBook.Recipes)
             {
-                HtmlNode newRecipeNode = HtmlNode.CreateNode("<div class='recipe-item'><img class='item-image' src='" 
-                + curRecipe.Result.Image + "'><h1 id='recipe-name'>" + curRecipe.Result.BlockType + "</h1><div class='number'><span class='minus'>-</span><input type='text' name='" + curRecipe.Result.BlockType + "' value='" 
-                + curRecipe.Result.Count + "'/><span class='plus'>+</span></div><input class='craft-btn' type='submit' value='Craft'>");
+                HtmlNode newRecipeNode = HtmlNode.CreateNode("<li class='recipe-item'><img class='item-recipe-image' src='" + curRecipe.Result.Image + "'><h1 id='recipe-name'>Click to Craft</h1><input class='item-btn' type='submit' value='" + curRecipe.Result.BlockType + "'/></li>");
                 recipeNode.AppendChild(newRecipeNode);
             }
 
