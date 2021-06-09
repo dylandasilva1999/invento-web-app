@@ -4,6 +4,7 @@ namespace invento_web_app
 {
     abstract class Item
     {
+		private static object blocksLock = new object();
         private int count;
         protected string blockType;
         protected string image;
@@ -12,18 +13,24 @@ namespace invento_web_app
         public int Count
         {
             get{
-                return count;
+				lock(blocksLock)
+				{
+					return count;
+				}
             }
             set{
-                if(value < 0)
-                {   
-                    count = -value;
-                } else 
-                {
-                    count = value;
-                }
-                
-                Database.UpdateBlockCount(blockType, count);
+				lock(blocksLock)
+				{
+					if(value < 0)
+					{   
+						count = -value;
+					} else 
+					{
+						count = value;
+					}
+					
+					Database.UpdateBlockCount(blockType, count);
+				}
             }
         }
 
