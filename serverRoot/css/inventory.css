@@ -117,6 +117,7 @@ Navbar Styling
     padding-right: 4%;
     padding-top: 1%;
     position: sticky;
+	background-color: #1c2a39;
 }
 
 .navbar-brand {
