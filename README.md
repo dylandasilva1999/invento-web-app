@@ -22,7 +22,7 @@
       <a href="https://github.com/dylandasilva1999/invento-web-app"><strong>Explore the docs »</strong></a>
    <br />
    <br />
-   <a href="">View Demo</a>
+   <a href="https://www.youtube.com/watch?v=-cvLwMYW1OM">View Demo</a>
     ·
     <a href="https://github.com/dylandasilva1999/invento-web-app/issues">Report Bug</a>
     ·
@@ -111,11 +111,25 @@ git clone https://github.com/dylandasilva1999/invento-web-app.git
 
 ### Features
 
-Features to be listed here soon!
+![image2][image2]
+### Update Inventory Items
+
+Update inventory item quantities.
+
+![image2][image2]
+### Craft recipes
+
+Craft recipes based on items and have it update the inventory database.
 
 ### Functionality
 
-Functionality to be listed here soon!
+* `Responsive layout`, `Container`, `Columns`, and `Rows` layouts were used to create the layouts with Bootstrap.
+* `C#` for the web/http server.
+* `Parsers` for the various files.
+* `HTML nodes` to render the items.
+* `Classes, Interfaces,` and `MySQL` database.
+* `CSS3` alongside `HTML 5` was used for the UI design and animations, hover effects etc. `JavaScript` was used for minor functionality such as the plus or minus (adding, subtracting) of updating a item's quantity. As well as to add event listener on the form submit for creating a recipe.
+
 
 <!-- CONCEPT PROCESS -->
 ## Concept Process
@@ -125,17 +139,14 @@ The `Conceptual Process` is the set of actions, activities and research that was
 ### Ideation
 
 <!--![image5][image5]-->
-Ideation to be listed here soon!
 
 ### Wireframes
 
 <!--![image6][image6]-->
-Wireframes to be listed here soon!
 
 ### User-flow
 
 <!--![image7][image7]-->
-User-flow to be listed here soon!
 
 <!-- DEVELOPMENT PROCESS -->
 ## Development Process
@@ -146,19 +157,18 @@ The `Development Process` is the technical implementations and functionality don
 
 #### Challenges
 
-Challenges to be listed here soon!
+* The ability to let the interface connect to the database.
+* The creation of all the resource classes and integrating the ability to craft.
 
-### Peer Reviews
+#### Highlights
 
-The `Peer Reviews` were conducted by my fellow students and lecturer.
-
-#### Feedback
-
-Feedback to be listed here soon!
+* Fixing the database and spelling error bugs.
+* The UI is definitely a highlight and that I did manage to complete the project.
 
 #### Future Changes
 
-Future changes to be listed here soon!
+* Add filter and search section on inventory page.
+* Improve the refreshing after crafting or updating inventory items.
 
 <!-- MOCKUPS -->
 ## Mockups
@@ -172,7 +182,14 @@ Future changes to be listed here soon!
 
 To see a run through of the application, click below:
 
-[View Demo]()
+[View Demo](https://www.youtube.com/watch?v=-cvLwMYW1OM)
+
+<!-- PROMO VIDEO -->
+## Promo Video
+
+To see the promo video, click below:
+
+[View Promo Video](https://www.youtube.com/watch?v=UEHb3xlk__g)
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -211,6 +228,10 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 
 * My lecturer Christof Enslin
 * [Minecraft History Article](https://www.thescienceacademystemmagnet.org/2019/12/20/the-history-of-minecraft/#:~:text=In%202009%2C%20Minecraft%20was%20created,resources%20to%20build%20those%20structures.)
+* [Flaticon](https://www.flaticon.com/)
+* [Minecraft Item Images](https://minecraft.fandom.com/wiki/Minecraft_Wiki)
+* [3D Illustrations](https://icons8.com/illustrations/style--business-3d)
+* [Bootstrap](https://getbootstrap.com/)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [image1]: Images/Image1.png
