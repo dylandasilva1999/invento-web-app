@@ -116,7 +116,7 @@ git clone https://github.com/dylandasilva1999/invento-web-app.git
 
 Update inventory item quantities.
 
-![image2][image2]
+![image3][image3]
 ### Craft recipes
 
 Craft recipes based on items and have it update the inventory database.
@@ -138,15 +138,17 @@ The `Conceptual Process` is the set of actions, activities and research that was
 
 ### Ideation
 
-<!--![image5][image5]-->
+![image4][image4]
+<br>
+![image5][image5]
 
 ### Wireframes
 
-<!--![image6][image6]-->
+![image6][image6]
 
 ### User-flow
 
-<!--![image7][image7]-->
+![image7][image7]
 
 <!-- DEVELOPMENT PROCESS -->
 ## Development Process
@@ -173,9 +175,7 @@ The `Development Process` is the technical implementations and functionality don
 <!-- MOCKUPS -->
 ## Mockups
 
-<!--![image8][image8]-->
-
-<!--![image9][image9]-->
+![image8][image8]
 
 <!-- VIDEO DEMONSTRATION -->
 ## Video Demonstration
@@ -235,6 +235,14 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [image1]: Images/Image1.png
+[image2]: Images/Image2.png
+[image3]: Images/Image3.png
+[image4]: Images/Image4.png
+[image5]: Images/Image5.png
+[image6]: Images/Image6.png
+[image7]: Images/Image7.png
+[image8]: Images/Image8.png
+[image9]: Images/Image9.png
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/dylan-da-silva-72b56a20a/
