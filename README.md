@@ -6,6 +6,8 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/dylandasilva1999/babble-chat-app?color=%231c2a39)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dylandasilva1999/babble-chat-app?color=%231c2a39)
 [![LinkedIn][linkedin-shield]][linkedin-url]
+[![Instagram][instagram-shield]][instagram-url]
+[![Behance][behance-shield]][behance-url]
 
 <h6 align="center">Dylan da Silva IDV 302</h6>
 <p align="center">
@@ -33,11 +35,11 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-* * [Project Description](#project-description)
+  * [Project Description](#project-description)
   * [Built with](#built-with)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
-  * [How to install](#how-to-install)
+  * [Installation](#installation)
 * [Features and Functionality](#features-and-functionality)
    * [Features](#features)
    * [Functionality](#functionality)
@@ -46,10 +48,14 @@
    * [Wireframes](#wireframes)
    * [User-flow](#user-flow)
 * [Development Process](#development-process)
-   * [Implementation](#implementation)
-   * [Peer Reviews](#peer-reviews)
-* [Mockups](#mockups)
-* [Video Demonstration](#video-demonstration)
+   * [Implementation Process](#implementation-process)
+        * [Highlights](#highlights)
+        * [Challenges](#challenges)
+   * [Future Implementation](#future-implementation)
+* [Final Outcome](#final-outcome)
+    * [Mockups](#mockups)
+    * [Video Demonstration](#video-demonstration)
+    * [Promotional Video](#promotional-video)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
@@ -88,8 +94,6 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 Ensure that you have the latest version of Visual Studio Code installed on your machine. The C-Sharp extention will be required.
-
-### How to install
 
 ### Installation
 Here are a couple of ways to clone this repo:
@@ -155,25 +159,33 @@ The `Conceptual Process` is the set of actions, activities and research that was
 
 The `Development Process` is the technical implementations and functionality done in the backend of the application.
 
-### Implementation
+### Implementation Process
 
-#### Challenges
-
-* The ability to let the interface connect to the database.
-* The creation of all the resource classes and integrating the ability to craft.
+#### Design Architecture
+`MVC` design architecture used for structuring Invento.
 
 #### Highlights
 
-* Fixing the database and spelling error bugs.
-* The UI is definitely a highlight and that I did manage to complete the project.
+* Fixing the `database and spelling error` bugs.
+* The `UI` is definitely a highlight and that I did manage to complete the project.
+* Adding `additional pages` to provide real-world context.
+* Definitely understanding the concepts of `Object Orientating Programming` 😅.
 
-#### Future Changes
+#### Challenges
 
-* Add filter and search section on inventory page.
+* The ability to let the `interface connect to the database`.
+* The `creation` of all the resource classes and integrating the ability to craft.
+
+#### Future Implementation
+
+* Add `filter and search` section on inventory page.
 * Improve the refreshing after crafting or updating inventory items.
+* `Connect` it to the `official Minecraft` game.
 
 <!-- MOCKUPS -->
-## Mockups
+## Final Outcome
+
+### Mockups
 
 ![image8][image8]
 
@@ -185,11 +197,11 @@ To see a run through of the application, click below:
 [View Demo](https://www.youtube.com/watch?v=-cvLwMYW1OM)
 
 <!-- PROMO VIDEO -->
-## Promo Video
+## Promotional Video
 
-To see the promo video, click below:
+To see the promotional video, click below:
 
-[View Promo Video](https://www.youtube.com/watch?v=UEHb3xlk__g)
+[View Promotional Video](https://www.youtube.com/watch?v=UEHb3xlk__g)
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -220,7 +232,7 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 <!-- LICENSE -->
 ## Contact
 
-* **Dylan da Silva** - [@dylandasilva.designs](https://www.instagram.com/dylandasilva.designs/) - 190082@virtualwindow.co.za
+* **Dylan da Silva** - [@dylandasilva.designs](https://www.instagram.com/dylandasilva.designs/) - dylandasilva.b@gmail.com
 * **Project Link** - https://github.com/dylandasilva1999/invento-web-app
 
 <!-- ACKNOWLEDGEMENTS -->
@@ -232,6 +244,13 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 * [Minecraft Item Images](https://minecraft.fandom.com/wiki/Minecraft_Wiki)
 * [3D Illustrations](https://icons8.com/illustrations/style--business-3d)
 * [Bootstrap](https://getbootstrap.com/)
+
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/dylan-da-silva-72b56a20a/
+[instagram-shield]: https://img.shields.io/badge/-Instagram-black.svg?style=flat-square&logo=instagram&colorB=555
+[instagram-url]: https://www.instagram.com/dylandasilva.designs/
+[behance-shield]: https://img.shields.io/badge/-Behance-black.svg?style=flat-square&logo=behance&colorB=555
+[behance-url]: https://www.behance.net/dylandasilva_
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [image1]: Images/Image1.png
